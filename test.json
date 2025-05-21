@@ -1,0 +1,40 @@
+{
+  "quest_name": "Shrine of the Cursed Oak",
+  "quest_giver": {
+    "name": "Elara Moonwhisper",
+    "location": "The Blackened Hearth Inn, Oakwood Village",
+    "motivation": "Her village is plagued by strange occurrences and her family's sacred tree has withered"
+  },
+  "clues": [
+    {
+      "source": "The village elder",
+      "type": "Testimony",
+      "meaning": "The shrine was once a place of great power, but now it seems to be drawing the life force from the forest"
+    },
+    {
+      "source": "A local hunter",
+      "type": "Visual",
+      "meaning": "There are strange symbols etched into the trees surrounding the shrine, pulsing with a dark energy"
+    },
+    {
+      "source": "Elara's family tree",
+      "type": "Magical",
+      "meaning": "The tree's withering is connected to an ancient curse placed on the land by a rival village"
+    }
+  ],
+  "solution": {
+    "description": "To lift the curse, the party must uncover the identity of the rival village and retrieve their artifact, which can only be accessed through the shrine",
+    "red_herrings": [
+      "A group of bandits are hiding in the nearby woods",
+      "The symbols on the trees seem to be a warning, not a clue"
+    ]
+  },
+  "final_challenge": {
+    "puzzle": "Linguistic Cipher",
+    "final_boss": {
+      "name": "Korvus, the Cursed One",
+      "trait": "A twisted version of the rival village's leader, with dark magic abilities"
+    },
+    "conclusion_action": "Elara must use her family tree to unlock the artifact and break the curse"
+  }
+}
