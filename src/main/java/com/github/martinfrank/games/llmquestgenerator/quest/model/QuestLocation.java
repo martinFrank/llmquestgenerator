@@ -18,4 +18,12 @@ public class QuestLocation {
     @JsonProperty
     public List<String> connections;
 
+    @Override
+    public String toString() {
+        return "QuestLocation{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", connections=" + connections +
+                '}';
+    }
 }

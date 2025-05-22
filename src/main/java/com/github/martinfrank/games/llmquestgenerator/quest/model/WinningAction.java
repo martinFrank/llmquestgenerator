@@ -16,4 +16,12 @@ public class WinningAction {
     @JsonProperty
     public String reason;
 
+    @Override
+    public String toString() {
+        return "WinningAction{" +
+                "description='" + description + '\'' +
+                ", location='" + location + '\'' +
+                ", reason='" + reason + '\'' +
+                '}';
+    }
 }

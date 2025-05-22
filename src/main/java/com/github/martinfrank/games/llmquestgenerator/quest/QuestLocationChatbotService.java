@@ -59,7 +59,7 @@ public class QuestLocationChatbotService {
 
     private static final String PROMPT_GENERAL_INSTRUCTIONS_8 = """
             The user provides the the quest summary in json format. Use this summary when creating the locations
-            
+
             Input (provided by the user):
             {
               "quest_name": "a short description of the quest",
@@ -73,10 +73,10 @@ public class QuestLocationChatbotService {
                  "endboss": "the final enemy the party is facing before the task can be fulfilled "
                }
             }
-            
+
             Return valid JSON only, with no explanations or extra text or formatting.
             The result should be machine-readable.
-             
+
     """;
 
     @Qualifier("ollamaChatModel")

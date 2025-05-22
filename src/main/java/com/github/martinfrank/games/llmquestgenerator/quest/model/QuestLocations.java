@@ -30,4 +30,11 @@ public class QuestLocations {
     private QuestLocation findLocation(String to) {
         return locations.stream().filter(l -> l.name.equals(to)).findFirst().orElse(null);
     }
+
+    @Override
+    public String toString() {
+        return "QuestLocations{" +
+                "locations=" + locations +
+                '}';
+    }
 }

@@ -10,6 +10,8 @@ public class JsonMapper {
 
     public static <T> T fromJson(String questSummaryJson, Class<T> clazz) {
         String stripped = JsonTrimmer.trim(questSummaryJson);
+//        System.out.println("------------stripped---------");
+//        System.out.println(stripped);
         return new Gson().fromJson(stripped, clazz);
     }
 

@@ -20,4 +20,13 @@ public class Clue {
     @JsonProperty
     public String location;
 
+    @Override
+    public String toString() {
+        return "Clue{" +
+                "content='" + content + '\'' +
+                ", hinted_fact='" + hinted_fact + '\'' +
+                ", source='" + source + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
 }

@@ -1,57 +1,44 @@
 package com.github.martinfrank.games.llmquestgenerator.json;
 
-import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestLocations;
+import com.github.martinfrank.games.llmquestgenerator.quest.model.Quest;
+import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestAction;
 import org.junit.jupiter.api.Test;
 
 class JsonMapperTest {
 
-    private static final String LOCATIONS_JSON = """
-            { \"locations\": [
-               {\"name\": \"Oakhaven Village\",
-                \"description\": \"A peaceful village nestled at the edge of the Whispering Woods.\",
-                \"connections\": [\"Willow Grove\", \"Old Oak Trail\"]
-                },
-                {\"name\": \"Willow Grove\",
-                 \"description\": \"A secluded grove of ancient willow trees, said to whisper secrets on the wind.\",
-                 \"connections\": [\"Oakhaven Village\", \"Whispering Woods\"]
-                },
-                {\"name\": \"Old Oak Trail\",
-                 \"description\": \"A winding path through the forest, lined with towering oaks and shrouded in mist.\",
-                 \"connections\": [\"Oakhaven Village\", \"Forgotten Crypt\", \"Aethelred's Tomb\"]
-                },
-                {\"name\": \"Whispering Woods\",
-                 \"description\": \"A vast and ancient forest, home to both beauty and danger.\",
-                 \"connections\": [\"Willow Grove\", \"Old Oak Trail\", \"Hidden Glade\"]
-                },
-                {\"name\": \"Hidden Glade\",
-                 \"description\": \"A secluded clearing deep within the Whispering Woods, rumored to be a place of magic.\",
-                 \"connections\": [\"Whispering Woods\", \"Forgotten Crypt\"]
-                },
-                {\"name\": \"Forgotten Crypt\",
-                 \"description\": \"An ancient burial ground, overgrown with vines and guarded by spectral wolves.\",
-                 \"connections\": [\"Old Oak Trail\", \"Hidden Glade\"]
-                },
-                {\"name\": \"Aethelred's Tomb\",
-                 \"description\": \"A weathered tomb hidden within a grove of ancient oaks, said to be the final resting place of Aethelred.\",
-                 \"connections\": [\"Old Oak Trail\"]
-                },
-                {\"name\": \"Haunted Barrow\",
-                 \"description\": \"An ominous barrow mound, rumored to be haunted by restless spirits.\",
-                 \"connections\": [\"Whispering Woods\"]
-                },
-                {\"name\": \"Silverstream Falls\",
-                 \"description\": \"A waterfall cascading into a crystal-clear pool, said to possess healing properties.\",
-                 \"connections\": [\"Hidden Glade\"]
-                },
-                {\"name\": \"Sunstone Summit\",
-                 \"description\": \"A mountain peak bathed in sunlight, offering breathtaking views of the surrounding landscape.\",
-                 \"connections\": [\"Whispering Woods\"]
-                }
-            ]}
+    private static final String ACTION_JSON = """
+            {
+               "winning_action": {
+                 "description": "Perform a ritual cleansing using purified water from the Crystal Spring and the Unicorn's horn to dispel the fog.",
+                 "location": "Heart of the Whisperwood, where the fog originates",
+                 "reason": "The Tainted Unicorn's essence is corrupted by the fog. Its horn holds potent magic that, combined with the purity of the spring water, can cleanse the forest."
+               },
+               "clues": [
+                 {
+                   "content": "The whispers grow louder near the Crystal Spring.",
+                   "hinted_fact": "The source of the fog might be connected to the Crystal Spring.",
+                   "source": "Elderwood Shepherd, near Oakhaven",
+                   "location": "Oakhaven Village outskirts"
+                 },
+                 {
+                   "content": "Legends speak of a unicorn whose horn holds the power to purify even the darkest magic.",
+                   "hinted_fact": "A unicorn's horn might be crucial in cleansing the fog.",
+                   "source": "Village Elder, Oakhaven",
+                   "location": "Oakhaven Village center"
+                 },
+                 {
+                   "content": "The whispers tell of a creature trapped within the heart of the Whisperwood, its magic twisted by the fog.",
+                   "hinted_fact": "The Tainted Unicorn is the source of the corruption in the forest.",
+                   "source": "Strange inscription found on an old ruin near the Whisperwood",
+                   "location": "Edge of the Whisperwood"
+                 }
+               ]
+             }
             """;
-//{ "locations": [   {"name": "Oakhaven Village",    "description": "A peaceful village nestled at the edge of the Whispering Woods.",    "connections": ["Willow Grove", "Old Oak Trail"]    },    {"name": "Willow Grove",     "description": "A secluded grove of ancient willow trees, said to whisper secrets on the wind.",     "connections": ["Oakhaven Village", "Whispering Woods"]    },    {"name": "Old Oak Trail",     "description": "A winding path through the forest, lined with towering oaks and shrouded in mist.",     "connections": ["Oakhaven Village", "Forgotten Crypt", "Aethelred's Tomb"]    },    {"name": "Whispering Woods",     "description": "A vast and ancient forest, home to both beauty and danger.",     "connections": ["Willow Grove", "Old Oak Trail", "Hidden Glade"]    },    {"name": "Hidden Glade",     "description": "A secluded clearing deep within the Whispering Woods, rumored to be a place of magic.",     "connections": ["Whispering Woods", "Forgotten Crypt"]    },    {"name": "Forgotten Crypt",     "description": "An ancient burial ground, overgrown with vines and guarded by spectral wolves.",     "connections": ["Old Oak Trail", "Hidden Glade"]    },    {"name": "Aethelred's Tomb",     "description": "A weathered tomb hidden within a grove of ancient oaks, said to be the final resting place of Aethelred.",     "connections": ["Old Oak Trail"]    },    {"name": "Haunted Barrow",     "description": "An ominous barrow mound, rumored to be haunted by restless spirits.",     "connections": ["Whispering Woods"]    },    {"name": "Silverstream Falls",     "description": "A waterfall cascading into a crystal-clear pool, said to possess healing properties.",     "connections": ["Hidden Glade"]    },    {"name": "Sunstone Summit",     "description": "A mountain peak bathed in sunlight, offering breathtaking views of the surrounding landscape.",     "connections": ["Whispering Woods"]    }]}"
+
     @Test
     void testMapping(){
-        QuestLocations questLocations = JsonMapper.fromJson(LOCATIONS_JSON, QuestLocations.class);
+        QuestAction action = JsonMapper.fromJson(ACTION_JSON, QuestAction.class);
+        System.out.println(action);
     }
 }

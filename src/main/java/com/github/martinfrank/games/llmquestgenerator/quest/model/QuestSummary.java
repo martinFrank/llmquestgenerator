@@ -14,5 +14,14 @@ public class QuestSummary {
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public QuestTask quest;
+    public Quest quest;
+
+    @Override
+    public String toString() {
+        return "QuestSummary{" +
+                "quest_name='" + quest_name + '\'' +
+                ", quest_giver=" + quest_giver +
+                ", quest=" + quest +
+                '}';
+    }
 }

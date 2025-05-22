@@ -14,5 +14,11 @@ public class QuestAction {
     @JsonProperty
     public List<Clue> clues;
 
-
+    @Override
+    public String toString() {
+        return "QuestAction{" +
+                "winning_action=" + winning_action +
+                ", clues=" + clues +
+                '}';
+    }
 }
