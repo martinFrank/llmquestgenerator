@@ -2,22 +2,20 @@ package com.github.martinfrank.games.llmquestgenerator.quest.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Clue {
+import java.util.List;
+
+public class QuestLocation {
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String content;
+    public String name;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String hinted_fact;
+    public String description;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String source;
-
-    @SuppressWarnings("unused")
-    @JsonProperty
-    public String location;
+    public List<String> connections;
 
 }

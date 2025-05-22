@@ -13,14 +13,17 @@
       "connections": [
         "Oakhaven Village",
         "Willow Grove",
-        "Aethelred's Tomb"
+        "Aethelred's Tomb",
+        "Ghostly Meadow",
+        "Crystal Caves"
       ]
     },
     {
       "name": "Willow Grove",
       "description": "A clearing in the Whispering Woods where a weeping willow tree stands, said to hold the spirits of the forest.",
       "connections": [
-        "Whispering Woods"
+        "Whispering Woods",
+        "Elder Willow"
       ]
     },
     {
@@ -41,7 +44,9 @@
       "name": "Ghostly Meadow",
       "description": "A misty meadow where spirits gather, said to hold clues to the past.",
       "connections": [
-        "Whispering Woods"
+        "Whispering Woods",
+        "Forgotten Shrine",
+        "Raven's Roost"
       ]
     },
     {
@@ -62,7 +67,8 @@
       "name": "Crystal Caves",
       "description": "Luminous caves filled with sparkling crystals, said to amplify magic and visions.",
       "connections": [
-        "Whispering Woods"
+        "Whispering Woods",
+        "Sunken Grove"
       ]
     },
     {

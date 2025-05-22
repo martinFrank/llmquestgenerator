@@ -318,7 +318,7 @@ public class QuestGeneratorChatbotAgentService {
                 .getText();
     }
 
-    public String requestQuest(String userInput){
+    public String createQuestSummary(String userInput){
         return requestLLM(userInput, PROMPT_GENERAL_INSTRUCTIONS_4);
     }
 
