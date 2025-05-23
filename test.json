@@ -1,1 +1,90 @@
-{     "locations": [       {         "name": "Village of Willow Creek",         "description": "A peaceful village nestled on the edge of the woods, shrouded in an eerie mist.",         "connections": ["Willow Creek outskirts", "Path leading to the Heartwood Grove"]       },       {         "name": "Willow Creek outskirts",         "description": "The fringes of the village where crops struggle to grow and whispers of the fog's influence linger.",         "connections": ["Village of Willow Creek", "Elder Anya's Hut"]       },       {         "name": "Elder Anya's Hut",         "description": "A small, weathered hut on the outskirts where Anya, a village elder, lives and tends to her herbs.",         "connections": ["Willow Creek outskirts"]       },       {         "name": "Path leading to the Heartwood Grove",         "description": "A winding path through dense woods, increasingly enveloped by the eerie mist.",         "connections": ["Village of Willow Creek", "Heartwood Grove", "Huntress Lyra's Cabin"]       },       {         "name": "Huntress Lyra's Cabin",         "description": "A sturdy cabin deep in the woods, inhabited by a skilled huntress who knows the dangers of the mist.",         "connections": ["Path leading to the Heartwood Grove"]       },       {         "name": "Heartwood Grove",         "description": "An ancient grove with towering oak trees, once a place of peace now shrouded in an oppressive fog.",         "connections": ["Path leading to the Heartwood Grove", "Forgotten Crypts"],       },       {         "name": "Forgotten Crypts",         "description": "Ancient burial chambers hidden beneath the grove, rumored to hold secrets about the mist's origins.",         "connections": ["Heartwood Grove"]       },       {         "name": "Moonlit Shrine",         "description": "A secluded shrine bathed in moonlight, said to be a place of powerful magic and purification.",         "connections": ["Path leading through the Whispering Woods"]       },       {         "name": "Whispering Woods",         "description": "A dense forest where trees rustle with unseen whispers, concealing ancient magic and forgotten pathways.",         "connections": ["Moonlit Shrine", "Twisted Grove"],                },       {         "name": "Twisted Grove",         "description": "A grove corrupted by the mist, where gnarled trees twist and contort, and strange creatures lurk in the shadows.",         "connections": ["Whispering Woods"]       }     ]   }
+{
+  "locations": [
+    {
+      "name": "Village Elder's house",
+      "description": "A humble abode where Elder Elara resides, offering wisdom and guidance.",
+      "connections": [
+        "Path leading out of the village",
+        "Market Square"
+      ]
+    },
+    {
+      "name": "Market Square",
+      "description": "Bustling with activity, traders offer goods and villagers share news.",
+      "connections": [
+        "Village Elder's house",
+        "The Blacksmith's Forge",
+        "Path to the Woods"
+      ]
+    },
+    {
+      "name": "The Blacksmith's Forge",
+      "description": "Where the rhythmic clang of hammer against metal fills the air, forging tools and weapons.",
+      "connections": [
+        "Market Square",
+        "Ruined Shrine at the edge of the woods"
+      ]
+    },
+    {
+      "name": "Path leading out of the village",
+      "description": "A well-worn path leading into the dense forest beyond the village.",
+      "connections": [
+        "Village Elder's house",
+        "Path to the Woods"
+      ]
+    },
+    {
+      "name": "Path to the Woods",
+      "description": "A winding trail shrouded in dappled sunlight, leading deeper into the heart of the woods.",
+      "connections": [
+        "Market Square",
+        "Path leading deeper into the woods",
+        "Ruined Shrine at the edge of the woods",
+        "Path leading out of the village"
+      ]
+    },
+    {
+      "name": "Ruined Shrine at the edge of the woods",
+      "description": "A crumbling testament to ancient worship, overgrown with vines and shrouded in mystery.",
+      "connections": [
+        "Path leading deeper into the woods",
+        "The Blacksmith's Forge",
+        "Path to the Woods"
+      ]
+    },
+    {
+      "name": "Path leading deeper into the woods",
+      "description": "A less traveled path, winding through dense undergrowth and towering trees.",
+      "connections": [
+        "Path to the Woods",
+        "Ancient Grove",
+        "Heart of the Ancient Grove",
+        "Ruined Shrine at the edge of the woods",
+        "Haunted Woods"
+      ]
+    },
+    {
+      "name": "Haunted Woods",
+      "description": "A shadowy expanse where whispers echo through the trees and strange creatures roam.",
+      "connections": [
+        "Path leading deeper into the woods"
+      ]
+    },
+    {
+      "name": "Ancient Grove",
+      "description": "A clearing bathed in ethereal light, where ancient trees stand tall and spirits dwell.",
+      "connections": [
+        "Path leading deeper into the woods",
+        "Heart of the Ancient Grove"
+      ]
+    },
+    {
+      "name": "Heart of the Ancient Grove",
+      "description": "The mystical core of the grove, a place of power and ancient secrets.",
+      "connections": [
+        "Ancient Grove",
+        "Path leading deeper into the woods"
+      ]
+    }
+  ]
+}
