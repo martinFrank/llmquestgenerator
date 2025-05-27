@@ -2,18 +2,14 @@ package com.github.martinfrank.games.llmquestgenerator.json;
 
 import org.junit.jupiter.api.Test;
 
-import java.sql.SQLOutput;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class JsonTrimmerTest {
 
     private static final String response = "<think>\n" +
             "Okay, so I need to create a role-playing game quest based on the prompt given: \"a small village surrounded by a mysterious fog where a tainted unicorn exists.\" Let me break this down.\n" +
             "\n" +
-            "First, the quest name. It should be short but descriptive. Maybe something like \"Tainted Unicorn's Shadow\" or \"Fog of Deception.\" I think \"Fog of Deception\" sounds catchy and ties in the elements mentioned.\n" +
+            "First, the quest id. It should be short but descriptive. Maybe something like \"Tainted Unicorn's Shadow\" or \"Fog of Deception.\" I think \"Fog of Deception\" sounds catchy and ties in the elements mentioned.\n" +
             "\n" +
-            "Next, the quest giver. They need to have a name, location, and motivation. The location could be within the village surrounded by fog, perhaps near a magical forest edge. The motivation should relate to something tied to the unicorn or the fog. Maybe they heard stories of a unicorn with a tainted mane that can corrupt others.\n" +
+            "Next, the quest giver. They need to have a id, location, and motivation. The location could be within the village surrounded by fog, perhaps near a magical forest edge. The motivation should relate to something tied to the unicorn or the fog. Maybe they heard stories of a unicorn with a tainted mane that can corrupt others.\n" +
             "\n" +
             "Now, the quest structure. The task for the taker involves uncovering something related to the unicorn and facing its consequences. Perhaps they need to find artifacts from the unicorn's past or talk to local inhabitants who might know secrets about it.\n" +
             "\n" +
@@ -39,14 +35,14 @@ class JsonTrimmerTest {
             "{\n" +
             "  \"quest_name\": \"Fog of Deception\",\n" +
             "  \"quest_giver\": {\n" +
-            "    \"name\": \"The Guardian\",\n" +
+            "    \"id\": \"The Guardian\",\n" +
             "    \"location\": \"Near the edge of the village, along the foggy outskirts.\",\n" +
             "    \"motivation\": \"To protect the village from the dark magic corruption tied to the unicorn.\"\n" +
             "  },\n" +
             "  \"quest\": {\n" +
             "    \"task\": \"Uncover the truth behind the unicorn's tainted existence and recruit allies to combat its influence across the village.\",\n" +
             "    \"endboss\": {\n" +
-            "      \"name\": \"Tainted Unicorn\",\n" +
+            "      \"id\": \"Tainted Unicorn\",\n" +
             "      \"final_boss_task\": \"Destroy its cursed symbol to break the spell on the village.\"\n" +
             "    }\n" +
             "  },\n" +
@@ -62,11 +58,11 @@ class JsonTrimmerTest {
             "  ],\n" +
             "  \"optional quests\": [\n" +
             "    {\n" +
-            "      \"name\": \"Unraveling the Magic\",\n" +
+            "      \"id\": \"Unraveling the Magic\",\n" +
             "      \"description\": \"A quest to find magical artifacts that can neutralize the unicorn's corruption.\"\n" +
             "    },\n" +
             "    {\n" +
-            "      \"name\": \"Dealing with Shadows\",\n" +
+            "      \"id\": \"Dealing with Shadows\",\n" +
             "      \"description\": \"Exploring hidden coven members who offer insights but demand rare materials.\"\n" +
             "    }\n" +
             "  ]\n" +
@@ -75,7 +71,6 @@ class JsonTrimmerTest {
 
     @Test
     void testTrim(){
-//        System.out.println(response);
         System.out.println(JsonTrimmer.trim(response));
     }
 

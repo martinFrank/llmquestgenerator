@@ -51,7 +51,7 @@ public class QuestController {
 //    }
 
     @PostMapping("/generate")
-    public ResponseEntity<String> chat(@RequestBody String questIdea) {
+    public ResponseEntity<String> generateQuestSummary(@RequestBody String questIdea) {
         questGenerator.generate(questIdea);
         return new ResponseEntity<>("hello", HttpStatus.OK);
     }

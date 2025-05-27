@@ -22,7 +22,7 @@ public class PersonController {
 
 
     @PostMapping("/generate")
-    public ResponseEntity<String> chat(@RequestBody String personDescription) {
+    public ResponseEntity<String> generatePersonDetails(@RequestBody String personDescription) {
         personGenerator.generate(personDescription);
         return new ResponseEntity<>("hello", HttpStatus.OK);
     }

@@ -151,7 +151,7 @@ public class QuestGeneratorChatbotAgentService {
             """;
 
     private static final String PROMPT_GENERAL_INSTRUCTIONS_5 = """
-            You generate locations for a role-playing game world. The locations form a network (node graph), where each
+            You generate locations for a role-playing game world. The locations form a network (nodeModel graph), where each
             location is connected to others and may or may not be relevant for a quest. Each location includes:
             - A short description
             - A flag indicating whether the location is quest_relevant (true/false)
@@ -185,7 +185,7 @@ public class QuestGeneratorChatbotAgentService {
     """;
 
     private static final String PROMPT_GENERAL_INSTRUCTIONS_6 = """
-            You generate a complex location network (node graph) for a fantasy role-playing game. Each location may
+            You generate a complex location network (nodeModel graph) for a fantasy role-playing game. Each location may
             contain NPCs or clues and may or may not be quest-relevant. Some locations should only be reachable through
             longer paths, creating meaningful exploration and travel.
 
@@ -195,7 +195,7 @@ public class QuestGeneratorChatbotAgentService {
                 "locations": [
                     {
                         "name": "Name of the location",
-                        "description": "Short one-sentence description",
+                        "description": "Short description",
                         "quest_relevant": true,
                         "connections": ["OtherLocation1", "OtherLocation2"],
                         "npcs": [

@@ -1,8 +1,10 @@
 package com.github.martinfrank.games.llmquestgenerator.location;
 
 import com.github.martinfrank.games.llmquestgenerator.json.JsonMapper;
-import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestLocation;
-import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestLocations;
+import com.github.martinfrank.games.llmquestgenerator.location.model.QuestLocation;
+import com.github.martinfrank.games.llmquestgenerator.location.model.QuestLocations;
+import com.google.gson.JsonObject;
+import netscape.javascript.JSObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -110,17 +112,48 @@ public class LocationGenerator {
                }
             """;
 
-    public void generate(String locationDescription) {
+    public void generateDetails(String locationDescription) {
         //create the top level quest structure
         QuestLocations locations = JsonMapper.fromJson(LOCATIONS, QuestLocations.class);
 
         QuestLocation location = locations.locations.get((int)(Math.random() * locations.locations.size()));
         String lastJson = JsonMapper.toJson(location);
 
-        String questSummaryJson = locationChatbotService.createLocation(location.description, lastJson);
+        String locationDetails = locationChatbotService.createLocationDetails(location.description, lastJson);
         System.out.println("-------summary-------");
-        System.out.println(questSummaryJson);
+        System.out.println(locationDetails);
 //        QuestSummary questSummary = JsonMapper.fromJson(questSummaryJson, QuestSummary.class);
+
+    }
+
+    public void generateQuestLocations(String questSummaryJson) {
+        //create locations to
+        JsonObject jsonObject = JsonMapper.fromJson(questSummaryJson, JsonObject.class);
+        jsonObject.remove("start_location");
+        String summaryWithoutStart = JsonMapper.toJson(jsonObject);
+        System.out.println("----mini summary---");
+        System.out.println(summaryWithoutStart);
+        String questLocationJson = locationChatbotService.createQuestLocations(summaryWithoutStart);
+        System.out.println("-------locations-------");
+        System.out.println(questLocationJson);
+
+        jsonObject.remove("sub_tasks");
+        String summaryWithoutSubtasks = JsonMapper.toJson(jsonObject);
+        String sideLocationJson = locationChatbotService.createSideLocations(summaryWithoutSubtasks);
+        System.out.println("-------locations-------");
+        System.out.println(sideLocationJson);
+
+
+
+
+
+
+////        System.out.println("-------locations object-------");
+////        System.out.println(questLocations);
+//
+//        System.out.println("-------locations repaired-------");
+//        System.out.println(JsonMapper.toJson(questLocations));
+//        System.out.println("number of locations = "+questLocations.locations.size());
 
     }
 

@@ -2,40 +2,29 @@ package com.github.martinfrank.games.llmquestgenerator.quest.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.List;
-
-public class QuestSummary {
+public class QuestTask {
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String quest_name;
+    public String subtask_description;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String quest_giver;
+    public String subtask_location;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String start_location;
+    public String subtask_object;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String quest_summary;
+    public String subtask_person;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String quest_details;
+    public String subtask_type;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public List<QuestTask> sub_tasks;
-
-    @SuppressWarnings("unused")
-    @JsonProperty
-    public List<QuestTaskClue> clues;
-
-    @SuppressWarnings("unused")
-    @JsonProperty
-    public String endboss;
-
+    public QuestTaskClue clue;
 }

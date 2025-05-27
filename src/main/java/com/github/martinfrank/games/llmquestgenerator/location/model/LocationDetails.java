@@ -2,11 +2,7 @@ package com.github.martinfrank.games.llmquestgenerator.location.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Location {
-
-    @SuppressWarnings("unused")
-    @JsonProperty
-    public String name;
+public class LocationDetails {
 
     @SuppressWarnings("unused")
     @JsonProperty

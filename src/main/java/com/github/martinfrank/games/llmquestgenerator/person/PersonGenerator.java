@@ -1,19 +1,7 @@
 package com.github.martinfrank.games.llmquestgenerator.person;
 
-import com.github.martinfrank.games.llmquestgenerator.json.JsonMapper;
-import com.github.martinfrank.games.llmquestgenerator.quest.QuestLocationChatbotService;
-import com.github.martinfrank.games.llmquestgenerator.quest.QuestSummaryChatbotService;
-import com.github.martinfrank.games.llmquestgenerator.quest.QuestTaskChatbotService;
-import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestAction;
-import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestLocations;
-import com.github.martinfrank.games.llmquestgenerator.quest.model.QuestSummary;
-import com.github.martinfrank.games.llmquestgenerator.speech.KokoroTextToSpeechClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 @Service
 public class PersonGenerator {

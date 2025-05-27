@@ -1,90 +1,34 @@
 {
   "locations": [
     {
-      "name": "Village Elder's house",
-      "description": "A humble abode where Elder Elara resides, offering wisdom and guidance.",
-      "connections": [
-        "Path leading out of the village",
-        "Market Square"
-      ]
+      "name": "Forgotten Ruins",
+      "description": "Weather-beaten stone structures overgrown with moss and vines, hinting at a forgotten civilization that once worshipped the forest's spirit. A palpable sense of unease hangs in the air.",
+      "location_type": "DUNGEON"
     },
     {
-      "name": "Market Square",
-      "description": "Bustling with activity, traders offer goods and villagers share news.",
-      "connections": [
-        "Village Elder's house",
-        "The Blacksmith's Forge",
-        "Path to the Woods"
-      ]
+      "name": "Spirit Grove",
+      "description": "A secluded clearing bathed in an ethereal green light. Ancient trees twist towards the sky, and the air thrums with a subtle, unsettling energy. The ground is covered in luminous moss.",
+      "location_type": "WILDERNESS"
     },
     {
-      "name": "The Blacksmith's Forge",
-      "description": "Where the rhythmic clang of hammer against metal fills the air, forging tools and weapons.",
-      "connections": [
-        "Market Square",
-        "Ruined Shrine at the edge of the woods"
-      ]
+      "name": "Ancient Tree Sanctuary",
+      "description": "A towering oak, impossibly old, stands at the heart of the grove. Its branches reach towards the heavens, and a swirling mist clings to its roots. The air feels heavy with ancient power.",
+      "location_type": "WILDERNESS"
     },
     {
-      "name": "Path leading out of the village",
-      "description": "A well-worn path leading into the dense forest beyond the village.",
-      "connections": [
-        "Village Elder's house",
-        "Path to the Woods"
-      ]
+      "name": "Library",
+      "description": "A small, dusty room within the village, filled with scrolls and ancient texts. The scent of aged parchment and beeswax fills the air. A single, flickering candle illuminates the shelves.",
+      "location_type": "TOWN"
     },
     {
-      "name": "Path to the Woods",
-      "description": "A winding trail shrouded in dappled sunlight, leading deeper into the heart of the woods.",
-      "connections": [
-        "Market Square",
-        "Path leading deeper into the woods",
-        "Ruined Shrine at the edge of the woods",
-        "Path leading out of the village"
-      ]
+      "name": "Tavern",
+      "description": "A lively, boisterous establishment filled with villagers and travelers. The air is thick with the smell of ale and roasted meat.  Whispers and rumors are common.",
+      "location_type": "TOWN"
     },
     {
-      "name": "Ruined Shrine at the edge of the woods",
-      "description": "A crumbling testament to ancient worship, overgrown with vines and shrouded in mystery.",
-      "connections": [
-        "Path leading deeper into the woods",
-        "The Blacksmith's Forge",
-        "Path to the Woods"
-      ]
-    },
-    {
-      "name": "Path leading deeper into the woods",
-      "description": "A less traveled path, winding through dense undergrowth and towering trees.",
-      "connections": [
-        "Path to the Woods",
-        "Ancient Grove",
-        "Heart of the Ancient Grove",
-        "Ruined Shrine at the edge of the woods",
-        "Haunted Woods"
-      ]
-    },
-    {
-      "name": "Haunted Woods",
-      "description": "A shadowy expanse where whispers echo through the trees and strange creatures roam.",
-      "connections": [
-        "Path leading deeper into the woods"
-      ]
-    },
-    {
-      "name": "Ancient Grove",
-      "description": "A clearing bathed in ethereal light, where ancient trees stand tall and spirits dwell.",
-      "connections": [
-        "Path leading deeper into the woods",
-        "Heart of the Ancient Grove"
-      ]
-    },
-    {
-      "name": "Heart of the Ancient Grove",
-      "description": "The mystical core of the grove, a place of power and ancient secrets.",
-      "connections": [
-        "Ancient Grove",
-        "Path leading deeper into the woods"
-      ]
+      "name": "Forest Path",
+      "description": "A winding trail through the dense forest, dappled with sunlight. The trees are unusually tall and silent, and an unsettling stillness pervades the area.",
+      "location_type": "WILDERNESS"
     }
   ]
 }

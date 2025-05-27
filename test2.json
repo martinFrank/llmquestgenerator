@@ -1,82 +1,29 @@
 {
   "locations": [
     {
-      "name": "Oakhaven Village",
-      "description": "A quaint village nestled at the edge of the Whispering Woods.",
-      "connections": [
-        "Whispering Woods"
-      ]
+      "name": "Village Square",
+      "description": "The heart of Oakhaven, a small, weathered square dominated by a crumbling fountain and the imposing presence of Elder Willow's hut.",
+      "location_type": "QUEST_TASK"
     },
     {
-      "name": "Whispering Woods",
-      "description": "An ancient forest filled with whispers and secrets, haunted by a restless spirit.",
-      "connections": [
-        "Oakhaven Village",
-        "Willow Grove",
-        "Aethelred's Tomb",
-        "Ghostly Meadow",
-        "Crystal Caves"
-      ]
+      "name": "Forgotten Ruins",
+      "description": "Overgrown with moss and choked by thorny vines, the remnants of an ancient shrine dedicated to the forest spirits. A palpable sense of unease hangs in the air.",
+      "location_type": "QUEST_CLUE"
     },
     {
-      "name": "Willow Grove",
-      "description": "A clearing in the Whispering Woods where a weeping willow tree stands, said to hold the spirits of the forest.",
-      "connections": [
-        "Whispering Woods",
-        "Elder Willow"
-      ]
+      "name": "Spirit Grove",
+      "description": "A secluded clearing bathed in an ethereal green light. The air hums with a subtle energy, and strange, luminous fungi grow in abundance.",
+      "location_type": "QUEST_TASK"
     },
     {
-      "name": "Elder Willow",
-      "description": "An ancient and wise willow tree that whispers secrets to those who listen closely.",
-      "connections": [
-        "Willow Grove"
-      ]
+      "name": "Ancient Tree Sanctuary",
+      "description": "A colossal, ancient tree stands at the center of this place, its branches reaching towards the sky like gnarled fingers. A small, hidden alcove is carved into its base.",
+      "location_type": "QUEST_CLUE"
     },
     {
-      "name": "Aethelred's Tomb",
-      "description": "A hidden crypt within the Whispering Woods, where the spirit of Aethelred lies restless.",
-      "connections": [
-        "Whispering Woods"
-      ]
-    },
-    {
-      "name": "Ghostly Meadow",
-      "description": "A misty meadow where spirits gather, said to hold clues to the past.",
-      "connections": [
-        "Whispering Woods",
-        "Forgotten Shrine",
-        "Raven's Roost"
-      ]
-    },
-    {
-      "name": "Forgotten Shrine",
-      "description": "A crumbling shrine dedicated to nature spirits, overgrown with vines and moss.",
-      "connections": [
-        "Ghostly Meadow"
-      ]
-    },
-    {
-      "name": "Raven's Roost",
-      "description": "A cliffside perch where a flock of ravens reside, known for their intelligence and connection to the unseen world.",
-      "connections": [
-        "Ghostly Meadow"
-      ]
-    },
-    {
-      "name": "Crystal Caves",
-      "description": "Luminous caves filled with sparkling crystals, said to amplify magic and visions.",
-      "connections": [
-        "Whispering Woods",
-        "Sunken Grove"
-      ]
-    },
-    {
-      "name": "Sunken Grove",
-      "description": "A partially submerged grove where ancient trees reach towards the sky, guarded by strange creatures.",
-      "connections": [
-        "Crystal Caves"
-      ]
+      "name": "Forest Path",
+      "description": "A winding trail that snakes through the dense heart of the Whispering Woods. The trees here seem to watch you, and the air is filled with a constant, rustling murmur.",
+      "location_type": "QUEST_CLUE"
     }
   ]
 }

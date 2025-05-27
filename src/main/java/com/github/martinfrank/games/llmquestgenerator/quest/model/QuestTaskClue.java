@@ -2,15 +2,15 @@ package com.github.martinfrank.games.llmquestgenerator.quest.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Clue {
+public class QuestTaskClue {
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String content;
+    public String hint;
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public String hinted_fact;
+    public String reveal_type;
 
     @SuppressWarnings("unused")
     @JsonProperty
@@ -20,13 +20,4 @@ public class Clue {
     @JsonProperty
     public String location;
 
-    @Override
-    public String toString() {
-        return "Clue{" +
-                "content='" + content + '\'' +
-                ", hinted_fact='" + hinted_fact + '\'' +
-                ", source='" + source + '\'' +
-                ", location='" + location + '\'' +
-                '}';
-    }
 }

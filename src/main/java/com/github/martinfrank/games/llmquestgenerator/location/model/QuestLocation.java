@@ -1,4 +1,4 @@
-package com.github.martinfrank.games.llmquestgenerator.quest.model;
+package com.github.martinfrank.games.llmquestgenerator.location.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -16,14 +16,27 @@ public class QuestLocation {
 
     @SuppressWarnings("unused")
     @JsonProperty
-    public List<String> connections;
+    public String location_type;
+
+    @SuppressWarnings("unused")
+    @JsonProperty
+    String id;
+
+    @SuppressWarnings("unused")
+    @JsonProperty
+    public String type;
+
+    @SuppressWarnings("unused")
+    @JsonProperty
+    public List<String> connectedIds;
 
     @Override
     public String toString() {
         return "QuestLocation{" +
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", connections=" + connections +
+                ", connections=" + connectedIds +
                 '}';
     }
 }
