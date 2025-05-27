@@ -24,12 +24,13 @@ public class QuestGenerator {
         this.kokoroTextToSpeechClient = kokoroTextToSpeechClient;
     }
 
-    public void generate(String questIdea) {
+    public String generate(String questIdea) {
         //create the top level quest structure
         String questSummaryJson = questSummaryChatbotService.createQuestSummary(questIdea);
         System.out.println("-------summary-------");
         System.out.println(questSummaryJson);
         QuestSummary questSummary = JsonMapper.fromJson(questSummaryJson, QuestSummary.class);
+        return JsonMapper.toJson(questSummary);
     }
 
     public void speak(String text) {

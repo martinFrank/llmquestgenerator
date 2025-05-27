@@ -247,7 +247,7 @@ public class LocationGenerator {
     private static QuestLocation createQuestLocation(Node node, QuestLocation location) {
         QuestLocation questLocation = createQuestLocation(node);
         questLocation.name = location.name;
-        questLocation.description = "In the heart of the town stands a stone fountain surrounded by town buildings";
+        questLocation.description = location.description;
         questLocation.location_type = node.type().name();
         return questLocation;
     }

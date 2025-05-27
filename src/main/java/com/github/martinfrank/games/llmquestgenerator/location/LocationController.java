@@ -82,8 +82,8 @@ public class LocationController {
     }
 
     @PostMapping("/generate")
-    public ResponseEntity<String> generateLocations() {
-        String result = locationGenerator.generateQuestLocations(SUMMARY_JSON);
+    public ResponseEntity<String> generateLocations(@RequestBody String questSummaryJson) {
+        String result = locationGenerator.generateQuestLocations(questSummaryJson);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }
