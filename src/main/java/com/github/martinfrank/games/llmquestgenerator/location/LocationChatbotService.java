@@ -183,7 +183,7 @@ public class LocationChatbotService {
                  - name: a rich, evocative name for the location
                  - description: a short, atmospheric description that fits into a fantasy world
                  - location_type: a general type/category label, choose a proper of  type from this list: TOWN, DUNGEON, WILDERNESS
-                 - create at least 5 locations of each kind, TOWN, DUNGEON, WILDERNESS
+                 - create at least 8 locations of each kind, TOWN, DUNGEON, WILDERNESS
                  
                  Return your result strictly in this JSON format:        
                 {

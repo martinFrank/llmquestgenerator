@@ -16,7 +16,7 @@ public class JsonMapper {
     }
 
     public static String toJson(Object object) {
-        return new Gson().newBuilder().disableHtmlEscaping().create().toJson(object);
+        return new Gson().newBuilder().disableHtmlEscaping().setPrettyPrinting().create().toJson(object);
     }
 
 }

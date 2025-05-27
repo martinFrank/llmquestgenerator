@@ -20,7 +20,7 @@ public class QuestLocation {
 
     @SuppressWarnings("unused")
     @JsonProperty
-    String id;
+    public String id;
 
     @SuppressWarnings("unused")
     @JsonProperty
@@ -33,10 +33,12 @@ public class QuestLocation {
     @Override
     public String toString() {
         return "QuestLocation{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", connections=" + connectedIds +
+                ", location_type='" + location_type + '\'' +
+                ", id='" + id + '\'' +
+                ", type='" + type + '\'' +
+                ", connectedIds=" + connectedIds +
                 '}';
     }
 }
