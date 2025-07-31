@@ -1,13 +1,29 @@
 package com.github.martinfrank.games.llmquestgenerator;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.github.martinfrank.games.llmquestgenerator.aigeneration.LocationGenerator;
+import com.github.martinfrank.games.llmquestgenerator.game.Game;
+import com.github.martinfrank.games.llmquestgenerator.game.SimpleGameGenerator;
+import com.github.martinfrank.games.llmquestgenerator.location.Location;
+import com.google.gson.Gson;
 
-@SpringBootApplication
+import java.util.List;
+
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SimpleGameGenerator gameGenerator = new SimpleGameGenerator();
+		Game game = gameGenerator.generate();
+		System.out.println(new Gson().toJson(game));
+
+		LocationGenerator locationGenerator = new LocationGenerator();
+//		List<Location> shortList = List.of(game.locations.get(2));
+//		List<Location> generatedLocations = locationGenerator.generate(shortList);
+		List<Location> generatedLocations = locationGenerator.generate(game.locations);
+		for(Location location : generatedLocations){
+			System.out.println(location.type.toString()+" "+location.id);
+			System.out.println(location.getDetails());
+		}
+
 	}
 
 }
