@@ -9,11 +9,12 @@ class ChatServiceTest {
     @Test
     void testChatService() throws IOException, InterruptedException {
         //given
-        Prompt prompt = new Prompt("warum ist der himmel blau?");
-        ChatService chatService = new ChatService();
+        Prompt prompt = Prompt.builder()
+                .userPrompt("why is the sky blue?")
+                .build();
 
         //when
-        String response = chatService.request(prompt);
+        String response = ChatService.request(prompt);
 
         //then:
         System.out.println(response);

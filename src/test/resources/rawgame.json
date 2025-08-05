@@ -1,0 +1,388 @@
+{
+  "locations": [
+    {
+      "type": "NONE",
+      "id": "NOWHERE",
+      "toLocationIds": []
+    },
+    {
+      "type": "MARKET_PLACE",
+      "id": "MARKET_PLACE",
+      "toLocationIds": [
+        "SMITHY",
+        "INN",
+        "APOTHECARY",
+        "ELDER_HUT",
+        "FIELD"
+      ]
+    },
+    {
+      "type": "SMITHY",
+      "id": "SMITHY",
+      "toLocationIds": [
+        "MARKET_PLACE"
+      ]
+    },
+    {
+      "type": "INN",
+      "id": "INN",
+      "toLocationIds": [
+        "MARKET_PLACE"
+      ]
+    },
+    {
+      "type": "APOTHECARY",
+      "id": "APOTHECARY",
+      "toLocationIds": [
+        "MARKET_PLACE"
+      ]
+    },
+    {
+      "type": "ELDER_HUT",
+      "id": "ELDER_HUT",
+      "toLocationIds": [
+        "MARKET_PLACE",
+        "LIBRARY"
+      ]
+    },
+    {
+      "type": "LIBRARY",
+      "id": "LIBRARY",
+      "toLocationIds": [
+        "ELDER_HUT"
+      ]
+    },
+    {
+      "type": "FIELDS",
+      "id": "FIELD",
+      "toLocationIds": [
+        "MARKET_PLACE",
+        "CROSSROAD"
+      ]
+    },
+    {
+      "type": "MEADOW",
+      "id": "CROSSROAD",
+      "toLocationIds": [
+        "FIELD",
+        "HAMLET",
+        "QUARRY",
+        "FOREST"
+      ]
+    },
+    {
+      "type": "HAMLET",
+      "id": "HAMLET",
+      "toLocationIds": [
+        "CROSSROAD"
+      ]
+    },
+    {
+      "type": "QUARRY",
+      "id": "QUARRY",
+      "toLocationIds": [
+        "CROSSROAD"
+      ]
+    },
+    {
+      "type": "GROVE",
+      "id": "FOREST",
+      "toLocationIds": [
+        "CROSSROAD",
+        "DEEP_FOREST"
+      ]
+    },
+    {
+      "type": "GROVE",
+      "id": "DEEP_FOREST",
+      "toLocationIds": [
+        "FOREST",
+        "WAY_TO_LAIR",
+        "WAY_TO_GRAVE",
+        "WAY_TO_MINE"
+      ]
+    },
+    {
+      "type": "FOREST",
+      "id": "WAY_TO_LAIR",
+      "toLocationIds": [
+        "DEEP_FOREST",
+        "LAIR"
+      ]
+    },
+    {
+      "type": "FOREST",
+      "id": "LAIR",
+      "toLocationIds": [
+        "WAY_TO_LAIR"
+      ]
+    },
+    {
+      "type": "WOODS",
+      "id": "WAY_TO_GRAVE",
+      "toLocationIds": [
+        "DEEP_FOREST",
+        "GHOSTS_GRAVE"
+      ]
+    },
+    {
+      "type": "WOODS",
+      "id": "GHOSTS_GRAVE",
+      "toLocationIds": [
+        "WAY_TO_GRAVE",
+        "DRUIDS_HUT"
+      ]
+    },
+    {
+      "type": "CLEARING",
+      "id": "DRUIDS_HUT",
+      "toLocationIds": [
+        "GHOSTS_GRAVE"
+      ]
+    },
+    {
+      "type": "FOREST",
+      "id": "WAY_TO_MINE",
+      "toLocationIds": [
+        "DEEP_FOREST",
+        "MINE"
+      ]
+    },
+    {
+      "type": "DUNGEON",
+      "id": "MINE",
+      "toLocationIds": [
+        "WAY_TO_MINE",
+        "DEEP_MINE"
+      ]
+    },
+    {
+      "type": "DUNGEON",
+      "id": "DEEP_MINE",
+      "toLocationIds": [
+        "MINE"
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "type": "PERSON",
+      "id": "SMITH",
+      "locationId": "SMITHY"
+    },
+    {
+      "type": "PERSON",
+      "id": "INN_KEEPER",
+      "locationId": "INN"
+    },
+    {
+      "type": "PERSON",
+      "id": "APOTHECARIST",
+      "locationId": "APOTHECARY"
+    },
+    {
+      "type": "PERSON",
+      "id": "VILLAGE_ELDER",
+      "locationId": "ELDER_HUT"
+    },
+    {
+      "type": "PERSON",
+      "id": "LIBRARIAN",
+      "locationId": "LIBRARY"
+    },
+    {
+      "type": "PERSON",
+      "id": "BARD",
+      "locationId": "INN"
+    },
+    {
+      "type": "PERSON",
+      "id": "FARMER",
+      "locationId": "HAMLET"
+    },
+    {
+      "type": "PERSON",
+      "id": "MINER",
+      "locationId": "QUARRY"
+    },
+    {
+      "type": "PERSON",
+      "id": "GHOST_PEACEFUL",
+      "locationId": "GHOSTS_GRAVE"
+    },
+    {
+      "type": "PERSON",
+      "id": "GHOST_MENACING",
+      "locationId": "NOWHERE"
+    }
+  ],
+  "quests": [
+    {
+      "id": "QUEST_TALK_TO_VILLAGE_ELDER",
+      "prerequisiteQuestIds": [],
+      "taskIds": [
+        "TASK_TALK_TO_VILLAGE_ELDER"
+      ],
+      "gameChangeIds": [],
+      "plot": "you have been asked to talk to the village elderly and help him",
+      "isCompleted": false
+    },
+    {
+      "id": "BRINGING_PEACE_TO_GHOST",
+      "prerequisiteQuestIds": [
+        "QUEST_TALK_TO_VILLAGE_ELDER"
+      ],
+      "taskIds": [],
+      "gameChangeIds": [],
+      "plot": "people and animals feel sick. nightmares and fear strikes the village. find the reason and remove it.",
+      "isCompleted": false
+    },
+    {
+      "id": "FIND_REASON",
+      "prerequisiteQuestIds": [],
+      "taskIds": [],
+      "gameChangeIds": [],
+      "plot": "find out what reason causes the terror",
+      "parent": "BRINGING_PEACE_TO_GHOST",
+      "isCompleted": false
+    },
+    {
+      "id": "TALK_TO_VILLAGERS",
+      "prerequisiteQuestIds": [],
+      "taskIds": [
+        "TALK_TO_SMITH",
+        "TALK_TO_INN_KEEPER",
+        "TALK_TO_LIBRARIAN",
+        "TALK_TO_APOTHECARIST",
+        "TALK_TO_APOTHECARIST"
+      ],
+      "gameChangeIds": [],
+      "plot": "ask around and find a clue",
+      "parent": "FIND_REASON",
+      "isCompleted": false
+    },
+    {
+      "id": "INVESITGATE_THE_GHOST",
+      "prerequisiteQuestIds": [
+        "TALK_TO_VILLAGERS"
+      ],
+      "taskIds": [
+        "SEARCH_THE_GRAVE",
+        "TALK_TO_GHOST"
+      ],
+      "gameChangeIds": [],
+      "plot": "now its clear that there is a ghost - lets investigate the ghost in the forest",
+      "parent": "FIND_REASON",
+      "isCompleted": false
+    },
+    {
+      "id": "LEARN_REMEDY",
+      "prerequisiteQuestIds": [
+        "INVESITGATE_THE_GHOST"
+      ],
+      "taskIds": [
+        "TALK_TO_LIBRARIAN_FOR_REMEDY"
+      ],
+      "gameChangeIds": [],
+      "plot": "you hope that the librarian knows how to settle a ghost",
+      "parent": "FIND_REASON",
+      "isCompleted": false
+    },
+    {
+      "id": "REMOVE_EVIL",
+      "prerequisiteQuestIds": [
+        "FIND_REASON"
+      ],
+      "taskIds": [],
+      "gameChangeIds": [],
+      "plot": "find a way to set the ghost to rest",
+      "parent": "BRINGING_PEACE_TO_GHOST",
+      "isCompleted": false
+    },
+    {
+      "id": "FIND_RING_STEALER",
+      "prerequisiteQuestIds": [],
+      "taskIds": [
+        "TALK_TO_SMITH_ABOUT_RING",
+        "TALK_TO_INN_KEEPER_ABOUT_RING",
+        "TALK_TO_APOTHECARIST_ABOUT_RING",
+        "TALK_TO_MINER_ABOUT_RING"
+      ],
+      "gameChangeIds": [],
+      "plot": "find out who stole the ring",
+      "parent": "REMOVE_EVIL",
+      "isCompleted": false
+    },
+    {
+      "id": "FIND_RING",
+      "prerequisiteQuestIds": [
+        "FIND_RING_STEALER"
+      ],
+      "taskIds": [
+        "SEARCH_RING"
+      ],
+      "gameChangeIds": [],
+      "plot": "find the ring that causes the ghost to roam",
+      "parent": "FIND_REASON",
+      "isCompleted": false
+    },
+    {
+      "id": "AWAKEN_GHOST",
+      "prerequisiteQuestIds": [
+        "FIND_SONG_OF_SORROWS",
+        "FIND_FLOWERS",
+        "FIND_RING"
+      ],
+      "taskIds": [
+        "DEPOSIT_FLOWERS",
+        "DEPOSIT_RING",
+        "SING_SONG"
+      ],
+      "gameChangeIds": [
+        "REMOVE_PEACEFUL_GHOST",
+        "ADD_MENACING_GHOST"
+      ],
+      "plot": "perform the ritual",
+      "parent": "REMOVE_EVIL",
+      "isCompleted": false
+    },
+    {
+      "id": "SETTLE_GHOST",
+      "prerequisiteQuestIds": [
+        "AWAKEN_GHOST"
+      ],
+      "taskIds": [
+        "FIGHT_MENANCING_GHOST"
+      ],
+      "gameChangeIds": [],
+      "plot": "the possessed form of the ghost appeared and you have to destroy it",
+      "parent": "REMOVE_EVIL",
+      "isCompleted": false
+    }
+  ],
+  "tasks": [
+    {
+      "type": "TALK_TO",
+      "id": "TASK_TALK_TO_VILLAGE_ELDER",
+      "objectId": "VILLAGE_ELDER",
+      "result": "you find out that the village is haunted and the village elder wants you to solve it"
+    },
+    {
+      "id": "TALK_TO_LIBRARIAN_FOR_REMEDY",
+      "objectId": "LIBRARIAN",
+      "result": "the librarian says to settle the ghost you need to return the ring, plant flowers, and sing the song of sorrows"
+    }
+  ],
+  "changes": [
+    {
+      "id": "REMOVE_PEACEFUL_GHOST",
+      "objectId": "GHOST_PEACEFUL",
+      "objectParameter": "NOWHERE"
+    },
+    {
+      "id": "ADD_MENACING_GHOST",
+      "objectId": "GHOST_MENACING",
+      "objectParameter": "GHOSTS_GRAVE"
+    }
+  ]
+}

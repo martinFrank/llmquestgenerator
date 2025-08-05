@@ -5,11 +5,14 @@ import com.google.gson.Gson;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
+import java.awt.desktop.QuitEvent;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class SimpleGameGeneratorTest {
+
 
     @Test
     void testSimpleQuestGameGenerator() {
@@ -19,20 +22,31 @@ class SimpleGameGeneratorTest {
         //when
         Game game = generator.generate();
 
-        //jedes Quest OHNE subQuests muss mind. einen Task haben!
-        List<Quest> questsWithMissingTasks = game.quests.stream().filter(q -> q.subQuestIds.isEmpty()).filter(q -> q.taskIds.isEmpty()).toList();
-        Assertions.assertTrue(questsWithMissingTasks.isEmpty());
-
-        //jedes Quest MIT subQuests drauf keinen Task haben!
-        List<Quest> questsWithTasksAndSubQuests = game.quests.stream().filter(q -> !q.subQuestIds.isEmpty()).filter(q -> !q.taskIds.isEmpty()).toList();
-        Assertions.assertTrue(questsWithTasksAndSubQuests.isEmpty());
-
-        game.locations.forEach(l -> System.out.println(l.type.toString()));
-
         //then
         assertNotNull(game);
 
-        //write to JSON
+        //FIXME - separate tests
+
+        //jedes Parent Quest darf KEINE Task haben!
+        Set<String> parentIds = game.quests.stream().filter(q -> q.parentId != null).map(q -> q.parentId).collect(Collectors.toSet());
+        boolean hasParentQuestsWithTasks = game.quests.stream().filter(q -> parentIds.contains(q.id)).anyMatch(q -> !q.taskIds.isEmpty());
+        Assertions.assertFalse(hasParentQuestsWithTasks);
+
+        //jedes subQuest MUSS tasks haben
+        boolean hasSubQuestWithoutTasks = game.quests.stream().filter(q -> !parentIds.contains(q.id)).anyMatch(q -> q.taskIds.isEmpty());
+        Assertions.assertFalse(hasSubQuestWithoutTasks);
+
+        //quest ids are unique
+        Set<String> questIdsAsSet = game.quests.stream().map(quest -> quest.id).collect(Collectors.toSet());
+        assertEquals(game.quests.size(), questIdsAsSet.size());
+
+        //task ids are unique
+        Set<String> taskIdsAsSet = game.tasks.stream().map(task -> task.id).collect(Collectors.toSet());
+        assertEquals(game.tasks.size(), taskIdsAsSet.size());
+
+
+
+        //print JSON
         System.out.println(new Gson().toJson(game));
     }
 

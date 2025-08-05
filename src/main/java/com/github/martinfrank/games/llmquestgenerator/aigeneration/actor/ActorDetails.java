@@ -1,6 +1,6 @@
-package com.github.martinfrank.games.llmquestgenerator.aigeneration;
+package com.github.martinfrank.games.llmquestgenerator.aigeneration.actor;
 
-public class GeneratedLocationDetails {
+public class ActorDetails {
 
     public String name;
     public String details;
