@@ -47,7 +47,7 @@ public class ActorGenerator {
             """;
 
     private static String generateFuzzy(Actor actor, String locationDescription) {
-        String userPrompt = new Gson().toJson(new ActorFuzzyInput(actor.type.toString(), actor.id, locationDescription));
+        String userPrompt = new Gson().toJson(new ActorFuzzyRequest(actor.type.toString(), actor.id, locationDescription));
         Prompt prompt = Prompt.builder()
                 .systemPrompt(SYSTEM_PROMPT_GENERATE_FUZZY)
                 .userPrompt(userPrompt)
@@ -79,8 +79,8 @@ public class ActorGenerator {
                     "image" : "a prompt to generate a image of the person"
                 }
                 """;
-        ActorDetailInput detailInput = new ActorDetailInput(fuzzy, systemPrompt);
-        String userInput = new Gson().toJson(detailInput);
+        ActorDetailRequest detailRequest = new ActorDetailRequest(fuzzy, systemPrompt);
+        String userInput = new Gson().toJson(detailRequest);
         Prompt prompt = Prompt.builder()
                 .systemPrompt(systemPrompt)
                 .userPrompt(userInput)

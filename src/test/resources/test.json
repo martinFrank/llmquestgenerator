@@ -226,271 +226,120 @@
       "gameChangeIds": [],
       "plot": "you have been asked to talk to the village elderly and help him",
       "isCompleted": false
-    },
-    {
-      "id": "BRINGING_PEACE_TO_GHOST",
-      "prerequisiteQuestIds": [
-        "QUEST_TALK_TO_VILLAGE_ELDER"
-      ],
-      "taskIds": [],
-      "gameChangeIds": [],
-      "plot": "people and animals feel sick. nightmares and fear strikes the village. find the reason and remove it.",
-      "isCompleted": false
-    },
-    {
-      "id": "FIND_REASON",
-      "prerequisiteQuestIds": [],
-      "taskIds": [],
-      "gameChangeIds": [],
-      "plot": "find out what reason causes the terror",
-      "parentId": "BRINGING_PEACE_TO_GHOST",
-      "isCompleted": false
-    },
-    {
-      "id": "TALK_TO_VILLAGERS",
-      "prerequisiteQuestIds": [],
-      "taskIds": [
-        "TALK_TO_SMITH_ABOUT_GHOST",
-        "TALK_TO_INN_KEEPER_ABOUT_GHOST",
-        "TALK_TO_LIBRARIAN_ABOUT_GHOST",
-        "TALK_TO_APOTHECARIST_ABOUT_GHOST",
-        "TALK_TO_FARMER_ABOUT_GHOST"
-      ],
-      "gameChangeIds": [],
-      "plot": "ask around and find a clue",
-      "parentId": "FIND_REASON",
-      "isCompleted": false
-    },
-    {
-      "id": "INVESITGATE_THE_GHOST",
-      "prerequisiteQuestIds": [
-        "TALK_TO_VILLAGERS"
-      ],
-      "taskIds": [
-        "SEARCH_THE_GRAVE_TO_INVESTIGATE",
-        "TALK_TO_GHOST_TO_INVESTIGATE"
-      ],
-      "gameChangeIds": [],
-      "plot": "now its clear that there is a ghost - lets investigate the ghost in the forest",
-      "parentId": "FIND_REASON",
-      "isCompleted": false
-    },
-    {
-      "id": "LEARN_REMEDY",
-      "prerequisiteQuestIds": [
-        "INVESITGATE_THE_GHOST"
-      ],
-      "taskIds": [
-        "TALK_TO_LIBRARIAN_FOR_REMEDY"
-      ],
-      "gameChangeIds": [],
-      "plot": "you hope that the librarian knows how to settle a ghost",
-      "parentId": "FIND_REASON",
-      "isCompleted": false
-    },
-    {
-      "id": "REMOVE_EVIL",
-      "prerequisiteQuestIds": [
-        "FIND_REASON"
-      ],
-      "taskIds": [],
-      "gameChangeIds": [],
-      "plot": "find a way to set the ghost to rest",
-      "parentId": "BRINGING_PEACE_TO_GHOST",
-      "isCompleted": false
-    },
-    {
-      "id": "FIND_RING_STEALER",
-      "prerequisiteQuestIds": [],
-      "taskIds": [
-        "TALK_TO_SMITH_ABOUT_RING_STEALER",
-        "TALK_TO_INN_KEEPER_ABOUT_RING_STEALER",
-        "TALK_TO_APOTHECARIST_ABOUT_RING_STEALER",
-        "TALK_TO_MINER_ABOUT_RING_STEALER"
-      ],
-      "gameChangeIds": [],
-      "plot": "find out who stole the ring",
-      "parentId": "REMOVE_EVIL",
-      "isCompleted": false
-    },
-    {
-      "id": "FIND_RING",
-      "prerequisiteQuestIds": [
-        "FIND_RING_STEALER"
-      ],
-      "taskIds": [
-        "SEARCH_RING_IN_MINES"
-      ],
-      "gameChangeIds": [],
-      "plot": "find the ring that causes the ghost to roam",
-      "parentId": "FIND_REASON",
-      "isCompleted": false
-    },
-    {
-      "id": "AWAKEN_GHOST",
-      "prerequisiteQuestIds": [
-        "FIND_SONG_OF_SORROWS",
-        "FIND_FLOWERS",
-        "FIND_RING"
-      ],
-      "taskIds": [
-        "DEPOSIT_FLOWERS_TO_AWAKEN_GHOST",
-        "DEPOSIT_RING_TO_AWAKEN_GHOST",
-        "SING_SONG_TO_AWAKEN_GHOST"
-      ],
-      "gameChangeIds": [
-        "REMOVE_PEACEFUL_GHOST",
-        "ADD_MENACING_GHOST"
-      ],
-      "plot": "perform the ritual",
-      "parentId": "REMOVE_EVIL",
-      "isCompleted": false
-    },
-    {
-      "id": "SETTLE_GHOST",
-      "prerequisiteQuestIds": [
-        "AWAKEN_GHOST"
-      ],
-      "taskIds": [
-        "FIGHT_MENACING_GHOST"
-      ],
-      "gameChangeIds": [],
-      "plot": "the possessed form of the ghost appeared and you have to destroy it",
-      "parentId": "REMOVE_EVIL",
-      "isCompleted": false
     }
   ],
   "tasks": [
     {
       "actorId": "VILLAGE_ELDER",
-      "mystery": "the village is haunted and the actor wants you to solve it",
-      "type": "TALK_TO",
+      "mystery": "the village is haunted and the village elder wants you to solve it",
       "id": "TASK_TALK_TO_VILLAGE_ELDER_TO_START",
       "isOptional": false
     },
     {
       "actorId": "SMITH",
       "mystery": "knows nothing",
-      "type": "TALK_TO",
       "id": "TALK_TO_SMITH_ABOUT_GHOST",
       "isOptional": true
     },
     {
       "actorId": "INN_KEEPER",
       "mystery": "knows nothing",
-      "type": "TALK_TO",
       "id": "TALK_TO_INN_KEEPER_ABOUT_GHOST",
       "isOptional": true
     },
     {
       "actorId": "LIBRARIAN",
       "mystery": "knows nothing",
-      "type": "TALK_TO",
       "id": "TALK_TO_LIBRARIAN_ABOUT_GHOST",
       "isOptional": true
     },
     {
       "actorId": "APOTHECARIST",
       "mystery": "knows nothing",
-      "type": "TALK_TO",
       "id": "TALK_TO_APOTHECARIST_ABOUT_GHOST",
       "isOptional": true
     },
     {
       "actorId": "FARMER",
       "mystery": "saw the ghost in the forrest",
-      "type": "TALK_TO",
       "id": "TALK_TO_FARMER_ABOUT_GHOST",
       "isOptional": false
     },
     {
       "locationId": "GHOSTS_GRAVE",
       "desiredObject": "the peaceful ghost",
-      "type": "SEARCH_AT",
       "id": "SEARCH_THE_GRAVE_TO_INVESTIGATE",
       "isOptional": false
     },
     {
       "actorId": "GHOST_PEACEFUL",
       "mystery": "the ring has been stolen from the ghost and this makes the ghost unrest",
-      "type": "TALK_TO",
       "id": "TALK_TO_GHOST_TO_INVESTIGATE",
       "isOptional": false
     },
     {
       "actorId": "LIBRARIAN",
       "mystery": "to settle the ghost you need to return the ring, plant flowers, and sing the song of sorrows",
-      "type": "TALK_TO",
       "id": "TALK_TO_LIBRARIAN_FOR_REMEDY",
       "isOptional": false
     },
     {
       "actorId": "SMITH",
       "mystery": "the smith didn\u0027t take the ring",
-      "type": "TALK_TO",
       "id": "TALK_TO_SMITH_ABOUT_RING_STEALER",
       "isOptional": true
     },
     {
       "actorId": "INN_KEEPER",
       "mystery": "the inn keeper didn\u0027t take the ring",
-      "type": "TALK_TO",
       "id": "TALK_TO_INN_KEEPER_ABOUT_RING_STEALER",
       "isOptional": true
     },
     {
       "actorId": "APOTHECARIST",
       "mystery": "the apothecary didn\u0027t take the ring",
-      "type": "TALK_TO",
       "id": "TALK_TO_APOTHECARIST_ABOUT_RING_STEALER",
       "isOptional": true
     },
     {
       "actorId": "MINER",
       "mystery": "the miner took the ring, regretted sealing it and hid it into deep mines",
-      "type": "TALK_TO",
       "id": "TALK_TO_MINER_ABOUT_RING_STEALER",
       "isOptional": false
     },
     {
       "locationId": "DEEP_MINE",
       "desiredObject": "the gold ring with a red pearl from the unrest ghost",
-      "type": "SEARCH_AT",
       "id": "SEARCH_RING_IN_MINES",
       "isOptional": false
     },
     {
       "locationId": "HAMLET",
       "desiredObject": "the blue flowers",
-      "type": "SEARCH_AT",
       "id": "SEARCH_FLOWERS_ON_FIELD",
       "isOptional": false
     },
     {
       "actorId": "BARD",
       "mystery": "the ancient elfen song of sorrows",
-      "type": "TALK_TO",
       "id": "FIND_SONG_OF_SORROW_IN_INN",
       "isOptional": false
     },
     {
       "locationId": "GHOSTS_GRAVE",
       "applyAction": "you place the flowers on the grave",
-      "type": "APPLY",
       "id": "DEPOSIT_FLOWERS_TO_AWAKEN_GHOST",
       "isOptional": false
     },
     {
       "locationId": "GHOSTS_GRAVE",
       "applyAction": "you return the ring to the grave",
-      "type": "APPLY",
       "id": "DEPOSIT_RING_TO_AWAKEN_GHOST",
       "isOptional": false
     },
     {
       "locationId": "GHOSTS_GRAVE",
       "applyAction": "you sing the song of sorrows in front of the grave",
-      "type": "APPLY",
       "id": "SING_SONG_TO_AWAKEN_GHOST",
       "isOptional": false
     },
@@ -498,7 +347,6 @@
       "actorId": "GHOST_MENACING",
       "locationId": "GHOSTS_GRAVE",
       "result": "you destroyed the hostile ghost. this brings peace to the soul and the village is saved",
-      "type": "FIGHT",
       "id": "FIGHT_MENACING_GHOST",
       "isOptional": false
     }

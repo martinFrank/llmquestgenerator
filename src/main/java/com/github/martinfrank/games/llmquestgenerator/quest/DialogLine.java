@@ -1,6 +1,5 @@
 package com.github.martinfrank.games.llmquestgenerator.quest;
 
-public enum TaskType {
+public record DialogLine (String speaker, String text){
 
-    TALK_TO, SEARCH_AT, APPLY, FIGHT
 }

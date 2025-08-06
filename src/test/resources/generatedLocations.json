@@ -3,18 +3,16 @@
     {
       "type": "NONE",
       "id": "NOWHERE",
-      "descriptionPrompt": "a undefined place",
       "toLocationIds": [],
       "details": {
-        "name": "Veridian\u0027s Embrace",
-        "details": "Veridian\u0027s Embrace is a partially submerged hall, a relic of a bygone era consumed by a dark lake. The space is dominated by decaying stonework, choked by roots and slick with algae, creating a treacherous and unsettling environment. A constant, mournful drip echoes through the chamber, amplifying a sense of profound sorrow and hinting at forgotten rituals.",
-        "image": "Generate a photorealistic image of a vast, partially submerged stone hall. The hall is filled with dark, sluggish black water. Thick, gnarled roots of ancient trees erupt from the water, their branches skeletal and reaching towards a collapsed, water-stained ceiling. Patches of sickly, phosphorescent moss cling to the walls, casting an ethereal glow. A constant rain of water and decaying leaves falls from the damaged ceiling. The overall mood should be dark, oppressive, and unsettling."
+        "name": "Veridian Rot",
+        "details": "Veridian Rot is the skeletal remains of a once-vital water mill, swallowed by the relentless embrace of the Blackwater River. The building’s timbers are consumed by damp and decay, creating a treacherous and eerie space. Whispers of its past echo through the dripping darkness, promising both forgotten industry and unsettling secrets.",
+        "image": "A photorealistic painting of a crumbling water mill interior. The scene is dominated by towering, moss-covered timbers and a massive, rusted water wheel partially submerged in murky, black water. A perpetual twilight filters through arched doorways, highlighting the damp stone walls covered in faded carvings depicting harvest scenes and water spirits. Focus on textures: weathered wood, rust, algae, and the reflective surface of the black water. Include subtle lighting to emphasize the eerie atmosphere."
       }
     },
     {
       "type": "MARKET_PLACE",
       "id": "MARKET_PLACE",
-      "descriptionPrompt": "a small market place in a small village",
       "toLocationIds": [
         "SMITHY",
         "INN",
@@ -23,95 +21,88 @@
         "FIELD"
       ],
       "details": {
-        "name": "Veridian Hub",
-        "details": "The Veridian Hub is a sprawling marketplace centered around a colossal, ancient oak, fostering a frenetic atmosphere of trade and daily life. Stalls overflow with diverse goods, creating a complex network of sights, sounds, and smells, while the ground beneath is perpetually damp. The heart of the market is dominated by a griffin fountain and the watchful presence of the great oak tree.",
-        "image": "A wide, panoramic view of a medieval marketplace named Veridian Hub. The scene is dominated by a colossal, ancient oak tree with spreading branches that cast a large shadow over a chaotic, bustling marketplace. Stalls of various materials – wood, canvas, and stone – are crammed together, overflowing with goods like pottery, textiles, and metalwork. The ground is slick with mud and rain, and numerous townsfolk and merchants are scattered throughout the square. The overall color palette is rich and earthy, with a focus on greens, browns, and reds. Dramatic lighting is present, with a focus on highlights to catch the eyes of the viewer."
+        "name": "Veridian Confluence",
+        "details": "The Veridian Confluence is a bustling marketplace centered around a natural spring, renowned for its diverse wares and the constant flow of people from across the region. Rough stone pathways weave through a densely packed collection of stalls offering goods from local artisans and distant lands. The air is thick with the smells of food, trade, and the ever-present dampness of the spring-fed area, creating a vibrant and somewhat overwhelming experience.",
+        "image": "A detailed painting of a medieval marketplace set in a shaded valley. A large, ancient oak dominates the center, surrounded by a chaotic array of stalls overflowing with colorful fabrics, pottery, and weaponry. A large, muddy fountain flows nearby, and a heavily guarded cart stands at the edge of the square, with a diverse crowd of people bustling through the scene."
       }
     },
     {
       "type": "SMITHY",
       "id": "SMITHY",
-      "descriptionPrompt": "a small smithy, mainly producing agricultural tools",
       "toLocationIds": [
         "MARKET_PLACE"
       ],
       "details": {
-        "name": "The Crucible\u0027s Maw",
-        "details": "This forge is a chaotic heart of creation, dominated by a massive, perpetually warm forge and a scarred anvil. The air is thick with the smells of metal, coal, and earth, reflecting generations of tireless craftsmanship. A small well offers a damp, perpetually slick source of water near the back of the room, suggesting a long-established workshop.",
-        "image": "A photorealistic rendering of a medieval blacksmith’s forge. The scene is lit by shafts of sunlight filtering through high, narrow windows, illuminating dust motes dancing in the air. A massive, active forge dominates the center, with sparks erupting from a quenching trough. Heavy wooden workbenches are scattered around, piled with raw materials – pig iron, charcoal, and ores. The walls are constructed of rough-hewn stone and uneven plaster, and a large, scarred anvil sits squarely in the center of the room. Focus on textures – the heat of the forge, the cold of the water, the rough stone, and the worn metal."
+        "name": "The Ember\u0027s Maw",
+        "details": "This sprawling smithy is a testament to relentless craftsmanship, dominated by a colossal forge where metal is perpetually shaped by hammer and heat. The space is a carefully controlled chaos, brimming with tools and half-finished projects hinting at countless creations. A palpable energy of transformation permeates the air, reflecting the cyclical nature of forging.",
+        "image": "A highly detailed digital painting of a medieval smithy, bathed in the warm orange glow of a massive stone forge. Sparks dance in the air, illuminating a chaotic but meticulously organized space filled with anvils, tools, and half-finished blades. Focus on textures – the rough stone walls, the blackened metal, the worn leather, and the intricate details of the tools.  Include shafts of light filtering through a small, barred window. The overall atmosphere should be one of industrious energy and skilled craftsmanship."
       }
     },
     {
       "type": "INN",
       "id": "INN",
-      "descriptionPrompt": "a small but fine inn, serving an astonishing good beer",
       "toLocationIds": [
         "MARKET_PLACE"
       ],
       "details": {
-        "name": "The Crooked Tankard",
-        "details": "The Crooked Tankard is a well-worn inn situated at a vital crossroads, serving as a haven for travelers and locals alike. Its weathered stone walls and dimly lit interior create a comforting, if slightly mysterious, atmosphere. The constant murmur of voices and the warmth of the hearth suggest countless stories and encounters have unfolded within its walls.",
-        "image": "Generate a painting of a medieval inn called ‘The Crooked Tankard.’ The inn is built primarily of grey stone, showing signs of age and weather damage. The interior is dimly lit by flickering tallow candles, casting dancing shadows on rough-hewn wooden tables and benches. A large, roaring fireplace dominates the center of the main hall. Several patrons are seated around tables, drinking and talking. Include details like tankards, wooden benches, and a worn stone floor. The overall mood should be cozy and inviting, yet with a sense of history and age."
+        "name": "The Serpent’s Coil",
+        "details": "The Serpent’s Coil is a sprawling, somewhat dilapidated inn built around a natural stone cave. Its timbers groan under the weight of years, and the interior is perpetually damp, with a strange coolness emanating from the stone walls. The establishment has a reputation for attracting travelers seeking both shelter and a good game of chance.",
+        "image": "A highly detailed digital painting depicting a large, stone inn built into a hillside. The inn is constructed of dark gray stone and weathered timber, with a heavy oak door slightly ajar. A massive stone fireplace dominates one wall, and a faint glow spills out into a dimly lit common room filled with rough-hewn tables and chairs. Moisture drips from the ceiling, and a collection of tarnished tankards and a stag\u0027s head rests on the mantelpiece. The overall atmosphere is one of age, mystery, and a subtle sense of unease."
       }
     },
     {
       "type": "APOTHECARY",
       "id": "APOTHECARY",
-      "descriptionPrompt": "the village\u0027s only herb shop that sells local herbs but also some magic utilities",
       "toLocationIds": [
         "MARKET_PLACE"
       ],
       "details": {
-        "name": "Veridian Vault",
-        "details": "The Veridian Vault is a dimly lit cellar, crammed with the accumulated tools and ingredients of a master apothecary. Ancient shelves overflow with meticulously organized jars and bottles, suggesting decades of careful preparation and experimentation. A palpable sense of history and potent remedies linger within the damp, silent space.",
-        "image": "A detailed, photorealistic painting of a medieval apothecary\u0027s cellar. Focus on the cluttered shelves filled with diverse jars and bottles, illuminated by a single shaft of sunlight. Emphasize the textures of the stone, wood, and glass. Include a large cast iron cauldron over a low-burning hearth and a worn wooden table with a stone mortar and pestle. The overall mood should be slightly unsettling and ancient."
+        "name": "The Obsidian Cellar",
+        "details": "This subterranean chamber serves as the workshop and repository of Silas Blackwood, a reclusive alchemist and herbalist. It’s a labyrinth of organized chaos, filled with ingredients, tools, and meticulously labeled containers for creating potent remedies and strange concoctions. The air itself feels thick with the weight of accumulated knowledge and the potential for both healing and ruin.",
+        "image": "A highly detailed, cinematic illustration of a vast, subterranean chamber. The walls are constructed of dark, polished obsidian, reflecting the faint light of numerous, flickering oil lamps. Shelves carved into the stone rise to incredible heights, overflowing with glass jars of various sizes, powders, and liquids. A large, central workbench is cluttered with tools and ingredients, illuminated by a single beam of light. The overall atmosphere is one of mystery and latent power, with subtle magical effects hinted at throughout the scene."
       }
     },
     {
       "type": "ELDER_HUT",
       "id": "ELDER_HUT",
-      "descriptionPrompt": "a small hut for the village elder",
       "toLocationIds": [
         "MARKET_PLACE",
         "LIBRARY"
       ],
       "details": {
-        "name": "Silvanus’s Burrow",
-        "details": "Silvanus’s Burrow is an ancient Elder Hut nestled against the slopes of Blackwood Hill, built for longevity and blending seamlessly with its surroundings. The structure is a testament to quiet resilience, characterized by natural materials and a pervasive sense of age. Inside, the space holds the accumulated knowledge and earthy scents of a solitary healer, offering a place of refuge and contemplation.",
-        "image": "A photorealistic image of an ancient, moss-covered Elder Hut built into the hillside of a dark, coniferous forest. The hut\u0027s thatched roof is partially obscured by wild roses and honeysuckle. A small stone chimney emits a plume of smoke. The overall lighting is dim and filtered, with shafts of weak sunlight streaming through a stained-glass window depicting a stylized forest. Focus on the textures of weathered timber, packed earth, and thick moss."
+        "name": "Stonehaven\u0027s Whisper",
+        "details": "Stonehaven’s Whisper is a secluded elder hut nestled deep within a damp valley, constructed from timber, wattle-and-daub, and moss-covered thatch. The interior is dominated by a large peat fire and worn benches, holding dried herbs and intricately carved wooden bottles. A palpable quiet and sense of ancient wisdom permeates the space, hinting at generations of accumulated knowledge and observed seasons.",
+        "image": "A detailed digital painting of a rustic elder hut built into a hillside. The hut is primarily constructed of dark timber and wattle-and-daub, with a steeply pitched thatched roof covered in moss and lichen. A large stone hearth dominates the interior, with a perpetually burning peat fire casting a warm glow. The surrounding valley is shrouded in mist, with ancient trees and damp foliage visible in the background. Focus on realistic lighting and textures, emphasizing the weathered and aged appearance of the hut."
       }
     },
     {
       "type": "LIBRARY",
       "id": "LIBRARY",
-      "descriptionPrompt": "a small room inside the village elder hut, that holds lots of books",
       "toLocationIds": [
         "ELDER_HUT"
       ],
       "details": {
-        "name": "The Obsidian Repository",
-        "details": "The Obsidian Repository is a vast, ancient library filled with meticulously organized scrolls and codices, guarded by the weight of accumulated knowledge. Its architecture features towering shelves of dark oak reinforced with iron, illuminated by shifting light through stained glass depicting celestial events. The room exudes a palpable stillness, a sacred space dedicated to the preservation of wisdom and marked by subtle vibrations from the immense collection.",
-        "image": "Create a digital painting of a massive, circular library hall. The walls are lined with towering bookshelves constructed from dark, richly grained oak and banded with iron. Stained-glass windows depict fantastical scenes from ancient lore. A large, complex astrological chart dominates a central window, bathed in the flickering light of several brass braziers. Focus on a sense of immense scale and quiet, scholarly activity."
+        "name": "The Chronarium",
+        "details": "The Chronarium is a vast repository of knowledge, built upon centuries of scholarly pursuit. Its immense bookshelves and central dais suggest a place of immense importance, where the weight of accumulated wisdom is almost tangible. The silent halls and worn furnishings speak of a dedication to learning and research, untouched by the passage of time.",
+        "image": "A breathtaking digital painting depicting a massive, circular library with towering bookshelves stretching impossibly high into a vaulted ceiling. Stained-glass windows depict scenes of celestial battles and mythical creatures. The lighting is predominantly cool and ethereal, with shafts of colored light illuminating dust motes dancing in the air. A large, circular table dominates the central hall, strewn with open books and quill pens. The floor is covered in a deep crimson plush carpet, adding to the sense of grandeur and age."
       }
     },
     {
       "type": "FIELDS",
       "id": "FIELD",
-      "descriptionPrompt": "the fileds outside the village where the citizens grow their food. some interesting flowers grow there",
       "toLocationIds": [
         "MARKET_PLACE",
         "CROSSROAD"
       ],
       "details": {
-        "name": "Aethelgard\u0027s Reaping",
-        "details": "This expansive field of ripening wheat, known as Aethelgard’s Reaping, dominates the landscape with its seemingly endless golden expanse. A worn track offers a path through the field, while a crumbling stone wall represents a forgotten border. The air is filled with the scent of harvest and a profound sense of tranquility, hinting at the land’s enduring power.",
-        "image": "A breathtaking panoramic view of a vast field of amber wheat stretching to the horizon, bathed in the warm light of the setting sun. A narrow, muddy track cuts through the center, leading the eye towards a low, overgrown stone wall on the distant western edge. Include subtle wildflowers in splashes of purple, yellow, and white along the margins and a few long shadows cast by the fading sunlight."
+        "name": "Veridian Scar",
+        "details": "Veridian Scar is a vast, recently harvested wheat field stretching towards a bruised twilight. A worn track cuts through the stubbled earth, leading to a crumbling stone boundary and a solitary, ancient oak. The air carries the scent of damp soil and a subtle metallic tang, hinting at a forgotten past.",
+        "image": "A photorealistic painting of a vast, golden wheat field under a stormy, bruised sky. A worn, muddy track cuts through the center, leading towards a crumbling stone wall overgrown with weeds and a solitary, ancient oak tree casting a long shadow. Focus on atmospheric lighting, with a sense of both tranquility and unease. Include details like scattered pottery shards in the soil and the stillness of a frozen windmill."
       }
     },
     {
       "type": "MEADOW",
       "id": "CROSSROAD",
-      "descriptionPrompt": "a crossroad in the fields",
       "toLocationIds": [
         "FIELD",
         "HAMLET",
@@ -119,55 +110,51 @@
         "FOREST"
       ],
       "details": {
-        "name": "Silversong Reach",
-        "details": "Silversong Reach is a vast, open meadow dominated by intensely pale grasses and vibrant wildflowers. At its heart, a weathered stone cross serves as an enigmatic marker, surrounded by a landscape marked by ancient tracks and the lingering presence of forgotten rituals. The space exudes an unnerving stillness, hinting at a deep history and a watchful, silent observer.",
-        "image": "A breathtaking landscape painting depicting a vast, silver-toned meadow under a bright, summer sun. Wildflowers in intense blues, yellows, and purples cover the lower slopes. A moss-covered stone cross stands prominently in the center, surrounded by a worn earth and scattered stones. A narrow, rutted track leads off into the distance, and a brooding rise of land is visible to the east, partially obscured by a dense hawthorn thicket. In the far distance, purple-tinged hills fade into a hazy atmosphere. The overall mood should be serene yet subtly unsettling."
+        "name": "Veridian Scar",
+        "details": "Veridian Scar is a secluded meadow dominated by an unusual stone crossroads, marked by ancient oaks and perpetually damp with moisture. The area possesses an unsettling stillness, imbued with a sense of forgotten histories and a subtly shifting light. A single, vibrant mushroom adds a surreal element to the already peculiar landscape.",
+        "image": "A breathtaking landscape painting depicting a vast, rolling meadow bathed in the pale light of a bruised afternoon sky. Three gnarled, ancient oak trees stand at each point of a moss-covered stone crossroads, their roots intertwined with the damp earth. A single, intensely scarlet and white mushroom sits prominently in the foreground, surrounded by wildflowers. The overall mood should be serene but subtly unsettling, evoking a sense of timelessness and hidden secrets."
       }
     },
     {
       "type": "HAMLET",
       "id": "HAMLET",
-      "descriptionPrompt": "a small hamlet, with a nice flower garden",
       "toLocationIds": [
         "CROSSROAD"
       ],
       "details": {
-        "name": "Hollow Creek",
-        "details": "Nestled within a bowl of ancient oaks, Hollow Creek is a hamlet steeped in sorrow and decay. The crumbling remains of a castle keep and a mournful well dominate the central square, hinting at a forgotten past. A palpable sense of desperation and isolation pervades the area, intensified by a persistent, damp mist.",
-        "image": "A photorealistic digital painting depicting a small, circular valley dominated by gnarled, ancient oak trees. In the center, a crumbling stone square contains a moss-covered well and a partially-standing stone wall. A persistent, grey mist hangs in the air, obscuring the hills in the background. The overall color palette is muted and melancholic, with shades of grey, brown, and moss green. Lighting is diffused and atmospheric, casting long, dramatic shadows."
+        "name": "Greyfen",
+        "details": "Greyfen is a village deeply rooted in the heart of a perpetually damp marshland. The architecture is characterized by tightly packed, grey stone buildings, creating an atmosphere of vulnerability and protection. A lingering sense of melancholy and ancient sorrow permeates the area, compounded by the Sorrow’s Breath river and the unsettling quiet of the surrounding landscape.",
+        "image": "A highly detailed digital painting depicting a medieval village nestled within a vast, grey marshland. The village consists of tightly packed, weathered grey stone buildings with steeply pitched thatched roofs. The Sorrow’s Breath river, a dark, sluggish current, winds through the center, reflecting the muted light. Ancient, weeping willows line the riverbanks, their branches drooping mournfully. The overall mood is bleak and atmospheric, with a heavy rain and a pervasive sense of isolation. Focus on textures – wet stone, damp thatch, algae-covered water – to convey the oppressive environment."
       }
     },
     {
       "type": "QUARRY",
       "id": "QUARRY",
-      "descriptionPrompt": "a small quarry, with a hut where miners can live. source for stone for the village",
       "toLocationIds": [
         "CROSSROAD"
       ],
       "details": {
-        "name": "Greyfang\u0027s Maw",
-        "details": "Greyfang’s Maw is a colossal quarry carved into the hillside, a place of ceaseless labor and dangerous excavation. The air is thick with dust and the relentless sound of stone being shaped, creating a brutal and unforgiving environment.  A network of perilous paths leads down into the quarry’s depths, hinting at the secrets held within the ancient granite.",
-        "image": "A highly detailed digital painting depicting a massive, open-pit quarry. The quarry walls are layered with grey and black granite, revealing intricate striations and geological patterns. The lighting is dramatic, with shafts of diffused light piercing through the overcast sky and casting long shadows across the rough-hewn stone. Scattered wooden carts and broken tools lie abandoned near the edges, and a small, stagnant pool reflects the grey sky at the base of the pit. Focus on texture and atmospheric perspective to convey the scale and danger of the location."
+        "name": "Stone’s Maw",
+        "details": "Stone’s Maw is a colossal quarry, a scarred wound in the hillside dominated by towering walls of jagged rock. The relentless rhythm of hammering and the constant hazard of loose shale create an atmosphere of exhaustion and danger. The quarry’s immense scale and unsettling silence suggest an ancient, almost sentient power.",
+        "image": "A breathtaking panoramic view of a massive, open-air quarry. Towering walls of grey and ochre rock dominate the scene, fractured with deep ravines filled with dark, still water. A network of rough stone tracks winds through the quarry floor, and a distant, hazy sky hangs above. Dramatic lighting, with strong shadows cast by the towering rock formations, emphasizes the scale and potential danger of the location.  Focus on textures: rough stone, wet shale, and the subtle interplay of light and shadow."
       }
     },
     {
       "type": "GROVE",
       "id": "FOREST",
-      "descriptionPrompt": "the outer skirts of a vast forest. the forest is light and easy to walk",
       "toLocationIds": [
         "CROSSROAD",
         "DEEP_FOREST"
       ],
       "details": {
-        "name": "Silversong Hollow",
-        "details": "Silversong Hollow is a secluded grove within the Whisperwood, defined by an oppressive stillness and the strange energy emanating from its ancient trees and stone fragments. A stagnant pool, reflecting an unsettling silver sheen, sits at its heart, surrounded by bioluminescent fungi and a pervasive, low hum. The space feels profoundly isolated, imbued with a sense of watchful awareness and a lingering, metallic scent.",
-        "image": "A highly detailed digital painting depicting a secluded grove in a perpetual twilight. Ancient, gnarled oak trees dominate the space, their branches interwoven with thorny vines. A small, stagnant pool reflects the dim light in a disturbed, silver sheen. Bioluminescent fungi cling to the base of the trees, casting an ethereal glow, and scattered, smooth, warm rocks are visible on the mossy forest floor. The overall atmosphere should be unsettling and serene, with a strong focus on texture and light."
+        "name": "Silversong Keep",
+        "details": "Silversong Keep is a crumbling fortress carved into the face of a sheer cliff, perpetually shrouded in mist. The stone is a pale grey, weathered by centuries of storms and neglect, and partially covered in clinging ivy. Despite its ruined state, a palpable sense of defensive power still lingers, hinting at a forgotten siege or a desperate struggle.",
+        "image": "A photorealistic painting of a massive, crumbling stone fortress built into the side of a dark, moss-covered cliff. Thick grey stone walls are partially obscured by clinging grey ivy. A dense, swirling mist obscures the lower portions of the fortress, and a single, arched doorway is visible. The lighting is dramatic, with a single shaft of pale sunlight breaking through the clouds, illuminating a small portion of the fortress. Include realistic textures, such as moss, lichen, and crumbling stone."
       }
     },
     {
       "type": "GROVE",
       "id": "DEEP_FOREST",
-      "descriptionPrompt": "the deeper parts of the forest, it is a darker wood, with many unknown plants",
       "toLocationIds": [
         "FOREST",
         "WAY_TO_LAIR",
@@ -175,118 +162,110 @@
         "WAY_TO_MINE"
       ],
       "details": {
-        "name": "Veridian Scar",
-        "details": "Veridian Scar is a secluded grove deep within the ancient forest, characterized by its perpetual twilight and unsettling tranquility. The site is dominated by a dense canopy, a stagnant pool, and strange bioluminescent fungi, creating an atmosphere of profound silence and forgotten magic. A circle of weathered standing stones adds to the area\u0027s unsettling aura, suggesting a place of ritualistic significance.",
-        "image": "A photorealistic painting of a hidden grove within a primeval forest. The scene should feature towering, ancient pine trees covered in thick, moss-drenched foliage. A small, murky pool of water sits at the center, reflecting a gloomy sky. Bioluminescent fungi cling to the base of the trees, casting an eerie, pulsating glow. The overall atmosphere should be one of unsettling tranquility and profound silence, with a focus on dramatic lighting and a sense of mystery."
+        "name": "Silvanus\u0027s Embrace",
+        "details": "Silvanus\u0027s Embrace is a grove of ancient pines shrouded within the Blackwood Forest. The air is thick with the scent of damp earth and pine, creating an unsettling silence broken only by the drip of water.  The forest floor is a treacherous landscape of roots, moss, and stagnant water, fostering a sense of profound age and isolation.",
+        "image": "A photorealistic painting of a dense, ancient pine grove. The trees are incredibly tall, their branches intertwined, blocking out most of the light. The forest floor is covered in a thick carpet of emerald green moss and ferns. A dark, sluggish stream winds through the center of the grove, reflecting the muted light. Focus on texture - the rough bark of the pines, the slickness of the moss, the cold, dark water.  Lighting should be cool and atmospheric, emphasizing the sense of depth and mystery. Include subtle, fantastical elements – perhaps a few unusually shaped rocks or an unnatural stillness in the air."
       }
     },
     {
       "type": "FOREST",
       "id": "WAY_TO_LAIR",
-      "descriptionPrompt": "this is a part of the forest, that leads even deeper into the forest. its humid here",
       "toLocationIds": [
         "DEEP_FOREST",
         "LAIR"
       ],
       "details": {
-        "name": "The Whispering Vein",
-        "details": "The Way to Lair is a treacherous, twisting passage within the Blackwood Forest, characterized by oppressive darkness and an unsettling stillness. Ancient pines form a dense canopy, creating a claustrophobic environment punctuated by decaying roots and the unsettling glow of bioluminescent fungi. A palpable sense of age and decay, combined with an unnatural silence, creates a profoundly unsettling atmosphere.",
-        "image": "A photorealistic painting depicting a narrow, moss-covered path winding through a dense, ancient forest. Towering pines with scarred bark dominate the scene, their branches interwoven to create a perpetual twilight. Patches of bioluminescent emerald fungi illuminate the forest floor, casting eerie shadows. A sense of oppressive atmosphere and isolation should be prominent."
+        "name": "Veridian’s Embrace",
+        "details": "Veridian’s Embrace is a forgotten path deep within the Blackwood Forest, characterized by its oppressive atmosphere and ancient, imposing trees. The route is riddled with unsettling symbols carved into the trunks and slick with moisture, hinting at a long and potentially sinister history. A pervasive sense of watchful stillness and subtle, unsettling energies dominates the area, creating a place of profound isolation and potential danger.",
+        "image": "A highly detailed digital painting depicting a narrow, moss-covered stone path winding through a section of the Blackwood Forest. The trees are immense and ancient, their branches forming a dense, dark canopy that blocks out most of the light, creating a perpetual twilight. A thick mist swirls along the ground, obscuring the details of the path and the surrounding forest. The stone path is slick with moisture and partially covered with vibrant green moss. Focus on creating a sense of oppressive atmosphere and unease, with an emphasis on the texture of the trees, the mist, and the stone."
       }
     },
     {
       "type": "FOREST",
       "id": "LAIR",
-      "descriptionPrompt": "there are very much small and big spiders in this part of the forest",
       "toLocationIds": [
         "WAY_TO_LAIR"
       ],
       "details": {
-        "name": "Veridian Veiled",
-        "details": "Veridian Veiled is a subterranean complex built around ancient oaks, steeped in an unnatural stillness and a pervasive sense of dread. The structure houses a collection of cryptic artifacts within a low-ceilinged hall, alongside remnants of forgotten rituals and offerings. A lingering metallic scent and the unsettling presence of geometric carvings contribute to a palpable atmosphere of unease and watchful observation.",
-        "image": "Generate a highly detailed, atmospheric digital painting of a vast, subterranean hall constructed around massive, intertwined oak trees. The walls are made of dark, moss-covered stone with strange, geometric patterns etched into them. Flickering torchlight casts dancing shadows, highlighting dust motes and the contents of numerous shelves filled with unlabeled jars and scrolls. A dark, brownish-red stained stone altar dominates one side of the hall, with a single raven\u0027s skull hanging above a heavily bolted iron door. Focus on creating a strong sense of depth, scale, and a pervading sense of mystery and decay."
+        "name": "Umbrageous Hold",
+        "details": "Umbrageous Hold is a subterranean complex, deliberately constructed to isolate it from the outside world. The location features a vast, decaying hall supported by unsettling carvings and a network of descending staircases leading to unknown depths. A pervasive sense of age and quiet anticipation hangs heavy in the air, suggesting a long history of secrecy and a lingering, unseen presence.",
+        "image": "A photorealistic painting of a massive, partially collapsed stone hall deep within a primeval forest. The hall is illuminated by shafts of weak light filtering through dense foliage, highlighting moss-covered walls, crumbling pillars adorned with grotesque carvings of twisted beasts, and a wide, uneven stone floor covered in moisture and scattered debris. The overall atmosphere should be dark, damp, and foreboding."
       }
     },
     {
       "type": "WOODS",
       "id": "WAY_TO_GRAVE",
-      "descriptionPrompt": "this part of the woods looks darker than the rest and it makes your heart feel heavier",
       "toLocationIds": [
         "DEEP_FOREST",
         "GHOSTS_GRAVE"
       ],
       "details": {
-        "name": "Silvanus\u0027s Maw",
-        "details": "Silvanus\u0027s Maw is a perpetually shadowed region dominated by ancient, twisted trees and a treacherous, boggy ground. The air is thick with the scent of decay and an unsettling quiet, punctuated by the drip of water and an almost tangible feeling of dread. Deep within, a crumbling stone altar suggests a history of dark rituals and forgotten sorrows, offering a glimpse into a place where the boundaries of reality blur.",
-        "image": "A highly detailed digital painting of a dense, primeval forest. Massive, ancient oaks and pines dominate the landscape, their branches intertwined to create a near-complete canopy, casting the ground in perpetual twilight. The forest floor is a boggy mire, covered in decaying leaves and slick with moisture. Twisted roots writhe across the path, and in the distance, a crumbling stone altar is partially submerged in the earth, with strange geometric carvings visible on the surrounding stones. The overall color palette is muted – deep greens, browns, and grays, with highlights of pale gray and silver to emphasize the dampness and shadows."
+        "name": "Silversong Hollow",
+        "details": "Silversong Hollow is a place of perpetual twilight, dominated by ancient oaks and a pervasive sense of melancholy. The air is thick with the scent of decay and a subtle metallic tang, and the ground is slick with moisture and unsettlingly cold. Scattered remnants of a forgotten burial site, coupled with luminescent fungi, contribute to the region\u0027s profound and unsettling atmosphere.",
+        "image": "A highly detailed, photorealistic painting of a dense, ancient forest at dusk. Towering, gnarled oaks with skeletal branches dominate the scene, casting a bruised, violet light on the forest floor. Scattered, moss-covered roots create a treacherous path, and luminescent, pulsating fungi cling to the trunks of the oldest trees. A persistent drizzle adds to the atmosphere, and a crumbling stone cairn is partially obscured by ivy. The overall mood should be one of deep melancholy and unease."
       }
     },
     {
       "type": "WOODS",
       "id": "GHOSTS_GRAVE",
-      "descriptionPrompt": "there is a grave in a clearing of the forest",
       "toLocationIds": [
         "WAY_TO_GRAVE",
         "DRUIDS_HUT"
       ],
       "details": {
-        "name": "Veridian Hollow",
-        "details": "Veridian Hollow is a deeply unsettling grove dominated by the ruins of an ancient chapel, shrouded in perpetual twilight and an unnatural stillness. The air is thick with the scent of decay and a subtle metallic tang, contributing to a pervasive sense of sorrow and loss. A central, unusually flat stone within a circular clearing suggests a place of ancient burial, where the boundary between worlds feels exceptionally fragile.",
-        "image": "A photorealistic painting depicting a circular clearing deep within a dense, ancient forest. In the center stands a large, flat-topped stone, acting as a grave marker. The surrounding trees are gnarled oaks, their branches twisted and reaching. The light is a dim, grey twilight, with a noticeable mist swirling around the base of the stone and the ruins of a crumbling stone chapel in the background. Focus on textures – the weathered stone, damp moss, decaying leaves, and the swirling mist.  Emphasize a mood of melancholy and unease."
+        "name": "Silken Sorrow",
+        "details": "Silken Sorrow Woods is a place of profound melancholy, dominated by ancient trees and decaying monuments. The perpetual mist and shifting patterns on the bark create an unsettling atmosphere, while a palpable sense of loss hangs heavy in the air.  A stagnant pool and luminescent fungi add to the eerie beauty and unsettling silence of this forgotten place.",
+        "image": "A breathtaking, surreal landscape painting. A dense forest of twisted, ancient oaks dominates the scene, their branches reaching like skeletal fingers towards a bruised purple sky.  A thick, swirling mist clings to the ground, illuminated by the ethereal glow of luminescent fungi clinging to the trees\u0027 bases. Scattered, weathered headstones lie partially buried in a thick layer of decaying leaves and moss. Use a muted color palette with a strong emphasis on purple, grey, and green. The overall mood should be melancholic and unsettling."
       }
     },
     {
       "type": "CLEARING",
       "id": "DRUIDS_HUT",
-      "descriptionPrompt": "there is a small hut for in a big tree",
       "toLocationIds": [
         "GHOSTS_GRAVE"
       ],
       "details": {
-        "name": "Silvanus\u0027 Embrace",
-        "details": "The Clearing of Whispering Pines, now known as Silvanus’ Embrace, is a secluded haven dominated by the Druid’s Hut, a structure organically grown from the surrounding pines. A sluggish stream and a pervasive stillness contribute to an atmosphere of ancient power and watchful observation. The space is filled with tools and symbols hinting at a deep connection to the natural world and forgotten practices.",
-        "image": "A photorealistic image of a circular clearing within a dark, ancient forest. Sunlight struggles to pierce the dense canopy, illuminating a rustic, living-wood Druid’s Hut constructed from intertwined pine trees. A sluggish stream winds through the center, and scattered around the hut are various stone tools and branches. Focus on the texture of the wood, moss, and stone, creating a sense of age and mystery. The overall mood should be tranquil and slightly unsettling."
+        "name": "Veridian Echo",
+        "details": "Veridian Echo is a secluded clearing dominated by a ring of ancient oaks, imbued with an atmosphere of profound stillness and forgotten knowledge. A small, weathered hut nestles within the oaks’ embrace, offering a refuge within the perpetually twilight woodland. The space is filled with intriguing objects and the comforting scent of herbs, suggesting a place of contemplation and perhaps, hidden practices.",
+        "image": "Generate a photorealistic image of a small, stone hut with a thatched roof, nestled within a dense, emerald-toned forest. The hut is surrounded by a ring of gnarled oaks, their roots exposed like serpentine forms. Sunlight struggles to penetrate the canopy, creating an ethereal, twilight atmosphere. Include a small, moss-covered spring and pool reflecting the muted colors, and a faint, warm glow emanating from the chimney of the hut. Focus on the textures of stone, wood, moss, and foliage, emphasizing the feeling of ancient stillness and hidden knowledge."
       }
     },
     {
       "type": "FOREST",
       "id": "WAY_TO_MINE",
-      "descriptionPrompt": "there is a path in the forest that even deeper into the woods",
       "toLocationIds": [
         "DEEP_FOREST",
         "MINE"
       ],
       "details": {
-        "name": "Blackroot Hollow",
-        "details": "Blackroot Hollow is a secluded area dominated by an ancient forest, characterized by a pervasive sense of decay and forgotten industry. The air is thick with the scent of minerals and damp earth, punctuated by the unsettling drone of the deep mine.  A palpable melancholy hangs in the air, compounded by strange fungi and the watchful silence of the surrounding woods.",
-        "image": "A breathtaking digital painting depicting a dark, atmospheric forest clearing. Towering, moss-draped oaks create a canopy overhead, filtering the light into long, shifting shadows. In the center of the clearing is a crumbling stone guard post, partially consumed by ivy. A stagnant pool of oily water reflects the dim light, and scattered around the base of the trees are rusted tools and broken carts. The overall mood should be melancholic and mysterious, emphasizing the age and isolation of the location."
+        "name": "Veridian Scar",
+        "details": "Veridian Scar is a region of the Blackwood Forest profoundly shaped by a long-abandoned mine, characterized by a perpetual twilight and unsettling quiet. The dense canopy and shifting shale ground create a treacherous path, while echoes of the mine’s operation – water, charcoal, and rusted iron – permeate the environment. A palpable sense of disruption and foreboding hangs heavy in the air, suggesting a wound upon the natural world.",
+        "image": "A highly detailed matte painting of a heavily wooded valley dominated by a collapsed mine entrance. The mine entrance is partially obscured by tangled roots and moss-covered stone. The lighting is dim, filtered through a dense canopy of pine trees, with a subtle, metallic sheen reflecting off the damp stone. Focus on textures - rough stone, tangled roots, dark earth, and the subtle play of light and shadow. Include a small, sluggish stream winding through the valley floor."
       }
     },
     {
       "type": "DUNGEON",
       "id": "MINE",
-      "descriptionPrompt": "there is an entrance to the mines, the mine is already abandoned",
       "toLocationIds": [
         "WAY_TO_MINE",
         "DEEP_MINE"
       ],
       "details": {
-        "name": "The Obsidian Vein",
-        "details": "The Obsidian Vein is a sprawling, unstable mine complex carved deep into the hillside.  The relentless drip of water and the unsettling silence create an atmosphere of profound isolation and potential danger.  Significant mineral deposits and the remnants of past mining efforts hint at the wealth hidden within, but the mine\u0027s instability and unsettling quietude pose a serious threat to those who dare to explore its depths.",
-        "image": "A breathtaking, highly detailed digital painting depicting the Obsidian Vein. Focus on the immense scale of the mine, with towering, jagged walls of dark grey stone illuminated by flickering torchlight.  Show a complex network of narrow, winding tunnels, partially collapsed and filled with loose shale and dust. Include a sense of claustrophobia through the narrow spaces and the play of light and shadow. The overall atmosphere should be dark, damp, and slightly ominous, with a subtle hint of otherworldly coolness emanating from the depths."
+        "name": "Grimstone Descent",
+        "details": "Grimstone Descent is a sprawling mine carved deep into the mountainside, characterized by damp, shadowed tunnels and unsettling crystalline formations. The mine\u0027s history is marked by abandoned tools and a sense of oppressive labor, compounded by strange vibrations and a pervasive chill.  Its labyrinthine passages suggest a desperate, perhaps futile, search for valuable resources within the mountain’s dark heart.",
+        "image": "A photorealistic painting depicting a vast, subterranean mine. The scene should be dominated by rough-hewn stone walls glistening with moisture and streaks of quartz. Flickering torchlight casts dramatic shadows, illuminating a complex network of narrow passages branching off into the darkness.  Crystalline formations jut out from the walls, catching the light and creating distorted patterns.  A sense of immense scale and unsettling darkness should be prominent, with a palpable feeling of age and forgotten work."
       }
     },
     {
       "type": "DUNGEON",
       "id": "DEEP_MINE",
-      "descriptionPrompt": "these are the deeper parts of the mine, it makes you feel fear",
       "toLocationIds": [
         "MINE"
       ],
       "details": {
-        "name": "The Serpent\u0027s Maw",
-        "details": "This subterranean passage, known locally as the Serpent\u0027s Maw, descends into the heart of the Blackrock Mountains. The relentless slope and treacherous footing suggest a long history of mining operations, now largely abandoned. A profound sense of age and mystery permeates the space, hinting at forgotten secrets and the dangers lurking within its depths.",
-        "image": "A highly detailed digital painting of a narrow, downward sloping passage within a dark, vast mine. The walls are constructed of grey shale and dark basalt, heavily striated and riddled with cracks. Intermittent veins of quartz glitter in the torchlight, casting eerie shadows. Loose gravel and shattered flagstones cover the floor, and the passage narrows significantly in the distance. Dramatic lighting emphasizing the cold and oppressive atmosphere."
+        "name": "The Black Vein",
+        "details": "The Black Vein is a sprawling, ancient deep mine, choked with damp and echoing with the unsettling sounds of shifting stone. Its narrow passages descend sharply, supporting a sense of claustrophobia and imminent danger. The mine’s forgotten purpose is hinted at by strange, mineral-formed patterns on the walls, intensifying the feeling of isolation and unseen presence.",
+        "image": "A hyperrealistic painting depicting a long, narrow tunnel within a deep mine. The walls are a sickly grey stone, slick with moisture and stained with dark mineral deposits. Flickering torchlight casts long, distorted shadows. The tunnel slopes steeply downwards, with massive, uneven timber and stone supports sparsely spaced along the walls. A faint, unnatural mist hangs in the air. Dramatic lighting and a sense of scale emphasize the oppressive darkness and the feeling of isolation."
       }
     }
   ],
@@ -344,86 +323,74 @@
   ],
   "quests": [
     {
-      "id": "BRINGING_PEACE_TO_GHOST(MAIN)",
+      "id": "QUEST_TALK_TO_VILLAGE_ELDER",
       "prerequisiteQuestIds": [],
-      "subQuestIds": [
-        "QUEST_TALK_TO_VILLAGE_ELDER",
-        "FIND_REASON",
-        "TALK_TO_LIBRARIAN",
-        "REMOVE_EVIL"
+      "taskIds": [
+        "TASK_TALK_TO_VILLAGE_ELDER_TO_START"
       ],
-      "taskIds": [],
       "gameChangeIds": [],
+      "plot": "you have been asked to talk to the village elderly and help him",
       "isCompleted": false
     },
     {
-      "id": "QUEST_TALK_TO_VILLAGE_ELDER",
-      "prerequisiteQuestIds": [],
-      "subQuestIds": [],
-      "taskIds": [
-        "TASK_TALK_TO_VILLAGE_ELDER"
+      "id": "BRINGING_PEACE_TO_GHOST",
+      "prerequisiteQuestIds": [
+        "QUEST_TALK_TO_VILLAGE_ELDER"
       ],
+      "taskIds": [],
       "gameChangeIds": [],
+      "plot": "people and animals feel sick. nightmares and fear strikes the village. find the reason and remove it.",
       "isCompleted": false
     },
     {
       "id": "FIND_REASON",
-      "prerequisiteQuestIds": [
-        "QUEST_TALK_TO_VILLAGE_ELDER"
-      ],
-      "subQuestIds": [
-        "TALK_TO_GHOST",
-        "TALK_MINER",
-        "FIND_RING"
-      ],
+      "prerequisiteQuestIds": [],
       "taskIds": [],
       "gameChangeIds": [],
+      "plot": "find out what reason causes the terror",
+      "parentId": "BRINGING_PEACE_TO_GHOST",
       "isCompleted": false
     },
     {
-      "id": "TALK_TO_GHOST",
+      "id": "TALK_TO_VILLAGERS",
       "prerequisiteQuestIds": [],
-      "subQuestIds": [],
       "taskIds": [
-        "TALK_TO_GHOST"
+        "TALK_TO_SMITH_ABOUT_GHOST",
+        "TALK_TO_INN_KEEPER_ABOUT_GHOST",
+        "TALK_TO_LIBRARIAN_ABOUT_GHOST",
+        "TALK_TO_APOTHECARIST_ABOUT_GHOST",
+        "TALK_TO_FARMER_ABOUT_GHOST"
       ],
       "gameChangeIds": [],
+      "plot": "ask around and find a clue",
+      "parentId": "FIND_REASON",
       "isCompleted": false
     },
     {
-      "id": "TALK_TO_LIBRARIAN",
+      "id": "INVESITGATE_THE_GHOST",
       "prerequisiteQuestIds": [
-        "TALK_TO_GHOST"
+        "TALK_TO_VILLAGERS"
       ],
-      "subQuestIds": [],
       "taskIds": [
-        "TALK_TO_LIBRARIAN"
+        "SEARCH_THE_GRAVE_TO_INVESTIGATE",
+        "TALK_TO_GHOST_TO_INVESTIGATE"
       ],
       "gameChangeIds": [],
+      "plot": "now its clear that there is a ghost - lets investigate the ghost in the forest",
+      "parentId": "FIND_REASON",
       "isCompleted": false
     },
     {
-      "id": "TALK_MINER",
+      "id": "LEARN_REMEDY",
       "prerequisiteQuestIds": [
-        "TALK_TO_GHOST"
+        "INVESITGATE_THE_GHOST"
       ],
-      "subQuestIds": [],
       "taskIds": [
-        "TALK_TO_MINER"
+        "TALK_TO_LIBRARIAN_FOR_REMEDY"
       ],
       "gameChangeIds": [],
-      "isCompleted": false
-    },
-    {
-      "id": "FIND_RING",
-      "prerequisiteQuestIds": [
-        "TALK_MINER"
-      ],
-      "subQuestIds": [],
-      "taskIds": [
-        "SEARCH_RING"
-      ],
-      "gameChangeIds": [],
+      "plot": "you hope that the librarian knows how to settle a ghost",
+      "parentId": "FIND_REASON",
       "isCompleted": false
     },
     {
@@ -431,56 +398,57 @@
       "prerequisiteQuestIds": [
         "FIND_REASON"
       ],
-      "subQuestIds": [
-        "FIND_FLOWERS",
-        "FIND_SONG_OF_SORROWS",
-        "AWAKEN_GHOST",
-        "SETTLE_GHOST"
-      ],
       "taskIds": [],
       "gameChangeIds": [],
+      "plot": "find a way to set the ghost to rest",
+      "parentId": "BRINGING_PEACE_TO_GHOST",
       "isCompleted": false
     },
     {
-      "id": "FIND_FLOWERS",
-      "prerequisiteQuestIds": [
-        "TALK_TO_LIBRARIAN"
-      ],
-      "subQuestIds": [],
+      "id": "FIND_RING_STEALER",
+      "prerequisiteQuestIds": [],
       "taskIds": [
-        "SEARCH_FLOWERS"
+        "TALK_TO_SMITH_ABOUT_RING_STEALER",
+        "TALK_TO_INN_KEEPER_ABOUT_RING_STEALER",
+        "TALK_TO_APOTHECARIST_ABOUT_RING_STEALER",
+        "TALK_TO_MINER_ABOUT_RING_STEALER"
       ],
       "gameChangeIds": [],
+      "plot": "find out who stole the ring",
+      "parentId": "REMOVE_EVIL",
       "isCompleted": false
     },
     {
-      "id": "FIND_SONG_OF_SORROWS",
+      "id": "FIND_RING",
       "prerequisiteQuestIds": [
-        "TALK_TO_LIBRARIAN"
+        "FIND_RING_STEALER"
       ],
-      "subQuestIds": [],
       "taskIds": [
-        "FIND_SONG_OF_SORROW"
+        "SEARCH_RING_IN_MINES"
       ],
       "gameChangeIds": [],
+      "plot": "find the ring that causes the ghost to roam",
+      "parentId": "FIND_REASON",
       "isCompleted": false
     },
     {
       "id": "AWAKEN_GHOST",
       "prerequisiteQuestIds": [
         "FIND_SONG_OF_SORROWS",
-        "FIND_FLOWERS"
+        "FIND_FLOWERS",
+        "FIND_RING"
       ],
-      "subQuestIds": [],
       "taskIds": [
-        "DEPOSIT_RING",
-        "DEPOSIT_FLOWERS",
-        "SONG_SONG"
+        "DEPOSIT_FLOWERS_TO_AWAKEN_GHOST",
+        "DEPOSIT_RING_TO_AWAKEN_GHOST",
+        "SING_SONG_TO_AWAKEN_GHOST"
       ],
       "gameChangeIds": [
         "REMOVE_PEACEFUL_GHOST",
         "ADD_MENACING_GHOST"
       ],
+      "plot": "perform the ritual",
+      "parentId": "REMOVE_EVIL",
       "isCompleted": false
     },
     {
@@ -488,80 +456,165 @@
       "prerequisiteQuestIds": [
         "AWAKEN_GHOST"
       ],
-      "subQuestIds": [],
       "taskIds": [
-        "FIGHT_MENANCING_GHOST"
+        "FIGHT_MENACING_GHOST"
       ],
       "gameChangeIds": [],
+      "plot": "the possessed form of the ghost appeared and you have to destroy it",
+      "parentId": "REMOVE_EVIL",
       "isCompleted": false
     }
   ],
   "tasks": [
     {
+      "actorId": "VILLAGE_ELDER",
+      "mystery": "the village is haunted and the actor wants you to solve it",
       "type": "TALK_TO",
-      "taskId": "TASK_TALK_TO_VILLAGE_ELDER",
-      "objectId": "VILLAGE_ELDER"
+      "id": "TASK_TALK_TO_VILLAGE_ELDER_TO_START",
+      "isOptional": false
     },
     {
+      "actorId": "SMITH",
+      "mystery": "knows nothing",
       "type": "TALK_TO",
-      "taskId": "TALK_TO_GHOST",
-      "objectId": "GHOST_PEACEFUL"
+      "id": "TALK_TO_SMITH_ABOUT_GHOST",
+      "isOptional": true
     },
     {
+      "actorId": "INN_KEEPER",
+      "mystery": "knows nothing",
       "type": "TALK_TO",
-      "taskId": "TALK_TO_LIBRARIAN",
-      "objectId": "LIBRARIAN"
+      "id": "TALK_TO_INN_KEEPER_ABOUT_GHOST",
+      "isOptional": true
     },
     {
+      "actorId": "LIBRARIAN",
+      "mystery": "knows nothing",
       "type": "TALK_TO",
-      "taskId": "TALK_TO_MINER",
-      "objectId": "MINER"
+      "id": "TALK_TO_LIBRARIAN_ABOUT_GHOST",
+      "isOptional": true
     },
     {
+      "actorId": "APOTHECARIST",
+      "mystery": "knows nothing",
+      "type": "TALK_TO",
+      "id": "TALK_TO_APOTHECARIST_ABOUT_GHOST",
+      "isOptional": true
+    },
+    {
+      "actorId": "FARMER",
+      "mystery": "saw the ghost in the forrest",
+      "type": "TALK_TO",
+      "id": "TALK_TO_FARMER_ABOUT_GHOST",
+      "isOptional": false
+    },
+    {
+      "locationId": "GHOSTS_GRAVE",
+      "desiredObject": "the peaceful ghost",
       "type": "SEARCH_AT",
-      "taskId": "SEARCH_RING",
-      "objectId": "DEEP_MINE"
+      "id": "SEARCH_THE_GRAVE_TO_INVESTIGATE",
+      "isOptional": false
     },
     {
-      "type": "SEARCH_AT",
-      "taskId": "SEARCH_FLOWERS",
-      "objectId": "HAMLET"
-    },
-    {
+      "actorId": "GHOST_PEACEFUL",
+      "mystery": "the ring has been stolen from the ghost and this makes the ghost unrest",
       "type": "TALK_TO",
-      "taskId": "FIND_SONG_OF_SORROW",
-      "objectId": "BARD"
+      "id": "TALK_TO_GHOST_TO_INVESTIGATE",
+      "isOptional": false
     },
     {
-      "type": "DEPOSIT_AT",
-      "taskId": "DEPOSIT_RING",
-      "objectId": "GHOSTS_GRAVE"
+      "actorId": "LIBRARIAN",
+      "mystery": "to settle the ghost you need to return the ring, plant flowers, and sing the song of sorrows",
+      "type": "TALK_TO",
+      "id": "TALK_TO_LIBRARIAN_FOR_REMEDY",
+      "isOptional": false
     },
     {
-      "type": "DEPOSIT_AT",
-      "taskId": "DEPOSIT_FLOWERS",
-      "objectId": "GHOSTS_GRAVE"
+      "actorId": "SMITH",
+      "mystery": "the smith didn\u0027t take the ring",
+      "type": "TALK_TO",
+      "id": "TALK_TO_SMITH_ABOUT_RING_STEALER",
+      "isOptional": true
     },
     {
-      "type": "DEPOSIT_AT",
-      "taskId": "SONG_SONG",
-      "objectId": "GHOSTS_GRAVE"
+      "actorId": "INN_KEEPER",
+      "mystery": "the inn keeper didn\u0027t take the ring",
+      "type": "TALK_TO",
+      "id": "TALK_TO_INN_KEEPER_ABOUT_RING_STEALER",
+      "isOptional": true
     },
     {
+      "actorId": "APOTHECARIST",
+      "mystery": "the apothecary didn\u0027t take the ring",
+      "type": "TALK_TO",
+      "id": "TALK_TO_APOTHECARIST_ABOUT_RING_STEALER",
+      "isOptional": true
+    },
+    {
+      "actorId": "MINER",
+      "mystery": "the miner took the ring, regretted sealing it and hid it into deep mines",
+      "type": "TALK_TO",
+      "id": "TALK_TO_MINER_ABOUT_RING_STEALER",
+      "isOptional": false
+    },
+    {
+      "locationId": "DEEP_MINE",
+      "desiredObject": "the gold ring with a red pearl from the unrest ghost",
+      "type": "SEARCH_AT",
+      "id": "SEARCH_RING_IN_MINES",
+      "isOptional": false
+    },
+    {
+      "locationId": "HAMLET",
+      "desiredObject": "the blue flowers",
+      "type": "SEARCH_AT",
+      "id": "SEARCH_FLOWERS_ON_FIELD",
+      "isOptional": false
+    },
+    {
+      "actorId": "BARD",
+      "mystery": "the ancient elfen song of sorrows",
+      "type": "TALK_TO",
+      "id": "FIND_SONG_OF_SORROW_IN_INN",
+      "isOptional": false
+    },
+    {
+      "locationId": "GHOSTS_GRAVE",
+      "applyAction": "you place the flowers on the grave",
+      "type": "APPLY",
+      "id": "DEPOSIT_FLOWERS_TO_AWAKEN_GHOST",
+      "isOptional": false
+    },
+    {
+      "locationId": "GHOSTS_GRAVE",
+      "applyAction": "you return the ring to the grave",
+      "type": "APPLY",
+      "id": "DEPOSIT_RING_TO_AWAKEN_GHOST",
+      "isOptional": false
+    },
+    {
+      "locationId": "GHOSTS_GRAVE",
+      "applyAction": "you sing the song of sorrows in front of the grave",
+      "type": "APPLY",
+      "id": "SING_SONG_TO_AWAKEN_GHOST",
+      "isOptional": false
+    },
+    {
+      "actorId": "GHOST_MENACING",
+      "locationId": "GHOSTS_GRAVE",
+      "result": "you destroyed the hostile ghost. this brings peace to the soul and the village is saved",
       "type": "FIGHT",
-      "taskId": "FIGHT_MENANCING_GHOST",
-      "objectId": "GHOST_MENACING"
+      "id": "FIGHT_MENACING_GHOST",
+      "isOptional": false
     }
   ],
   "changes": [
     {
-      "type": "MOVE_PERSON",
       "id": "REMOVE_PEACEFUL_GHOST",
       "objectId": "GHOST_PEACEFUL",
       "objectParameter": "NOWHERE"
     },
     {
-      "type": "MOVE_PERSON",
       "id": "ADD_MENACING_GHOST",
       "objectId": "GHOST_MENACING",
       "objectParameter": "GHOSTS_GRAVE"

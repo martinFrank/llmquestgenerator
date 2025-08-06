@@ -43,12 +43,11 @@ public class ChatService {
             String line;
             while ((line = reader.readLine()) != null) {
                 // Jede Zeile ist ein JSON-Objekt mit einem "response"-Feld
-                var content = extractResponse(line);
-                if (content != null) {
+                String content = extractResponse(line);
+                if (!content.isEmpty()) {
                     modelResponse.add(content);
                 }
             }
-            System.out.println();
         }
         return String.join("", modelResponse);
     }

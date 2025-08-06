@@ -1,6 +1,4 @@
 package com.github.martinfrank.games.llmquestgenerator.quest;
 
-public enum TaskType {
-
-    TALK_TO, SEARCH_AT, APPLY, FIGHT
+public class ApplyPerformance {
 }

@@ -1,34 +1,6 @@
 {
-  "locations": [
-    {
-      "name": "Forgotten Ruins",
-      "description": "Weather-beaten stone structures overgrown with moss and vines, hinting at a forgotten civilization that once worshipped the forest's spirit. A palpable sense of unease hangs in the air.",
-      "location_type": "DUNGEON"
-    },
-    {
-      "name": "Spirit Grove",
-      "description": "A secluded clearing bathed in an ethereal green light. Ancient trees twist towards the sky, and the air thrums with a subtle, unsettling energy. The ground is covered in luminous moss.",
-      "location_type": "WILDERNESS"
-    },
-    {
-      "name": "Ancient Tree Sanctuary",
-      "description": "A towering oak, impossibly old, stands at the heart of the grove. Its branches reach towards the heavens, and a swirling mist clings to its roots. The air feels heavy with ancient power.",
-      "location_type": "WILDERNESS"
-    },
-    {
-      "name": "Library",
-      "description": "A small, dusty room within the village, filled with scrolls and ancient texts. The scent of aged parchment and beeswax fills the air. A single, flickering candle illuminates the shelves.",
-      "location_type": "TOWN"
-    },
-    {
-      "name": "Tavern",
-      "description": "A lively, boisterous establishment filled with villagers and travelers. The air is thick with the smell of ale and roasted meat.  Whispers and rumors are common.",
-      "location_type": "TOWN"
-    },
-    {
-      "name": "Forest Path",
-      "description": "A winding trail through the dense forest, dappled with sunlight. The trees are unusually tall and silent, and an unsettling stillness pervades the area.",
-      "location_type": "WILDERNESS"
-    }
-  ]
+  "quest": "you have been asked to talk to the village elderly and help him",
+  "actor": "Corvus is a solitary cartographer, deeply immersed in the study of forgotten routes and ancient maps. He spends his days meticulously charting the surrounding lands, driven by a relentless curiosity and a quiet obsession with uncovering lost histories. Despite his weathered appearance and withdrawn nature, there\u0027s an undeniable sharpness to his intellect and a palpable sense of adventure in his eyes.",
+  "location": "Stonehaven’s Whisper is a secluded elder hut nestled deep within a damp valley, constructed from timber, wattle-and-daub, and moss-covered thatch. The interior is dominated by a large peat fire and worn benches, holding dried herbs and intricately carved wooden bottles. A palpable quiet and sense of ancient wisdom permeates the space, hinting at generations of accumulated knowledge and observed seasons.",
+  "mystery": "the village is haunted and the village elder wants you to solve it"
 }
