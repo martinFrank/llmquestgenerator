@@ -1,77 +1,34 @@
 package com.github.martinfrank.games.llmquestgenerator.location;
 
-import com.github.martinfrank.games.llmquestgenerator.aigeneration.location.LocationDetails;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Location {
 
     public final LocationType type;
     public final String id;
-    public final List<String> toLocationIds = new ArrayList<>();
+    public final String generation;
+    public final Set<String> toLocationIds = new HashSet<>();
 
-    private LocationDetails details;
-
-
-    private Location(LocationType locationType, String id) {
+    public Location(LocationType locationType, String id, String generation) {
         this.type = locationType;
         this.id = id;
+        this.generation = generation;
     }
 
-    public void addTo(String toId) {
-        toLocationIds.add(toId);
+    public void connect(Location location) {
+        toLocationIds.add(location.id);
+        location.toLocationIds.add(this.id);
     }
 
     @Override
     public String toString() {
         return "Location{" +
+                "type=" + type +
                 ", id='" + id + '\'' +
-                "type=" + type;
+                ", generation='" + generation + '\'' +
+                ", toLocationIds=" + toLocationIds +
+                '}';
     }
 
-    public LocationDetails getDetails() {
-        return details;
-    }
-
-    public void setDetails(LocationDetails details) {
-        this.details = details;
-    }
-
-    public static Builder builder(){
-        return new Builder();
-    }
-
-    public static class Builder{
-
-        private LocationType type;
-        private String id;
-        private final List<Location> destinations = new ArrayList<>();
-
-        public Builder type(LocationType type){
-            this.type = type;
-            return this;
-        }
-        public Builder id(String id){
-            this.id = id;
-            return this;
-        }
-        public Builder connect(Location destination){
-            destinations.add(destination);
-            return this;
-        }
-
-        public Location build(){
-            Location location = new Location(type, id);
-            for(Location destinations : destinations){
-                connectLocations(location, destinations);
-            }
-            return location;
-        }
-
-        private static void connectLocations(Location a, Location b) {
-            a.addTo(b.id);
-            b.addTo(a.id);
-        }
-    }
 }

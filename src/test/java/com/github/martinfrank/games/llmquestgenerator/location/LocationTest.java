@@ -6,21 +6,16 @@ import org.junit.jupiter.api.Test;
 class LocationTest {
 
     @Test
-    void testBuilder(){
-        Location marketPlace = Location.builder()
-                .id("MARKET_PLACE")
-                .type(LocationType.MARKET_PLACE)
-                .build();
+    void testBuilder() {
+        //given
+        Location marketPlace = new Location(LocationType.MARKET_PLACE, "MARKET_PLACE", "a market place");
+        Location townHall = new Location(LocationType.TOWN_HALL, "TOWNHALL", "the town hall");
 
-        Location townHall = Location.builder()
-                .id("TOWNHALL")
-                .type(LocationType.TOWN_HALL)
-                .connect(marketPlace)
-                .build();
+        //when
+        marketPlace.connect(townHall);
 
+        //then
         Assertions.assertTrue(townHall.toLocationIds.contains(marketPlace.id));
         Assertions.assertTrue(marketPlace.toLocationIds.contains(townHall.id));
-
     }
-
 }

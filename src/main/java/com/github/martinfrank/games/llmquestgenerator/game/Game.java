@@ -10,6 +10,7 @@ import java.util.List;
 
 public class Game {
 
+    public final String plot;
     public final List<Location> locations = new ArrayList<>();
     public final List<Actor> actors = new ArrayList<>();
     public final List<Quest> quests = new ArrayList<>();
@@ -17,11 +18,13 @@ public class Game {
     public final List<GameChange> changes = new ArrayList<>();
 
     public Game(
+            String plot,
             List<Location> locations,
             List<Actor> actors,
             List<Quest> quests,
             List<Task> tasks,
             List<GameChange> changes) {
+        this.plot = plot;
         this.locations.addAll(locations);
         this.actors.addAll(actors);
         this.quests.addAll(quests);
